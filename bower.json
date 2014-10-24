@@ -1,0 +1,12 @@
+{
+  "name": "-energy-saving-tips-for-businesses",
+  "dependencies": {
+    "angular": "~1.2.x",
+    "angular-ui-router": "~0.2.11"
+  },
+  "overrides": {
+    "angular-ui-router": {
+      "main": "release/angular-ui-router.js"
+    }
+  }
+}

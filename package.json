@@ -1,0 +1,33 @@
+{
+  "name": "-energy-saving-tips-for-businesses",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "del": "*",
+    "main-bower-files": "*",
+    "autoprefixer-core": "*",
+    "browser-sync": "^1.1.1",
+    "gulp": "^3.8.8",
+    "gulp-install": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-size": "^0.4.0",
+    "gulp-util": "^2.2.18",
+    "gulp-watch": "^0.6.8",
+    "gulp-replace": "^0.4.0",
+    "gulp-load-plugins": "*",
+    "gulp-sass": "*",
+    "gulp-postcss": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-csslint": "^0.1.4",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-imagemin": "*",
+    "gulp-svgmin": "*"
+  },
+  "author": "Jan Baykara <jan@baykara.co.uk> (http://jan.baykara.co.uk/)"
+}
