@@ -42,7 +42,7 @@ gulp.task('install', function () {
     .pipe(plugins.sass({
         errLogToConsole: true
     }))
-    .pipe(plugins.autoprefixer("last 1 version", "> 1%", "ie 8", "ie 7"))
+    .pipe(plugins.autoprefixer({browsers: ['> 0.1%']}))
     .pipe(plugins.size({showFiles: true}))
     .pipe(plugins.minifyCss())
     // .pipe(plugins.csslint({
@@ -102,14 +102,14 @@ gulp.task('install', function () {
 
     gulp.task('rasters', function() {
       gulp.src(dirs.dev.img)
-      .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+      // .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
       .pipe(gulp.dest(dirs.prod.images));
     });
 
     gulp.task('vectors', function() {
       gulp.src(dirs.dev.svg)
-      .pipe(plugins.svgmin())
-      .pipe(plugins.replace(/_[0-9]+_/g, '')) // Illustrator SVGs; strip appended strings from id names
+      // .pipe(plugins.svgmin())
+      // .pipe(plugins.replace(/_[0-9]+_/g, '')) // Illustrator SVGs; strip appended strings from id names
       .pipe(gulp.dest(dirs.prod.images));
     });
 

@@ -2,11 +2,16 @@
   "name": "-energy-saving-tips-for-businesses",
   "dependencies": {
     "angular": "~1.2.x",
-    "angular-ui-router": "~0.2.11"
+    "angular-ui-router": "~0.2.11",
+    "html5shiv": "~3.7.2",
+    "css3pie": "*"
   },
   "overrides": {
     "angular-ui-router": {
       "main": "release/angular-ui-router.js"
+    },
+    "css3pie": {
+      "main": "PIE_uncompressed.js"
     }
   }
 }

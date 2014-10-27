@@ -2,13 +2,23 @@
 // Colors
 
 // Defined colors
-$brand-color: 		  	#fc1023;
+$brand-color: 		  	#2fab9b;
 $complementary-color: adjust_hue($brand-color, 180);
 $secondary-color: 	  adjust_hue($brand-color, 120);
 $tertiary-color: 	  	adjust_hue($brand-color, -120);
 
-$text-color:         	#333;
-$background-color:   	#fff;
+$good: #00ff7b;
+$bad: #ff5647;
+$brand-red: #cc4f3d;
+$brand-blue: #4d8282;
+$brand-lblue: #3dc7cc;
+$brand-dark: #314240;
+$brand-beige: #ffdab5;
+$brand-beige-start: #fff3a8;
+$brand-beige-end: #ffcb8f;
+
+$text-color:         	$brand-beige;
+$background-color:   	$brand-dark;
 
 $link-color:          $complementary-color;
 $link-color-hover:    lighten($link-color,10%);
@@ -20,7 +30,8 @@ $link-color-visited:  $link-color;
 
 $queries: small #{"screen and (min-width: 0em)"},
           medium #{"screen and (min-width: 48em)"},
-          large #{"screen and (min-width: 64em)"};
+          large #{"screen and (min-width: 64em)"},
+          extralarge #{"screen and (min-width: 92em)"};
 
 @mixin break($point) {
   @each $query in $queries {
