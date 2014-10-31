@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router'])
 
 /* AngularJS calling order
 1. app.config()
@@ -8,7 +8,7 @@ var app = angular.module('app', ['ui.router']);
 5. directive's link functions (again if found)
 */
 
-app.config(function($stateProvider,$urlRouterProvider) {
+.config(function($stateProvider,$urlRouterProvider) {
 
   $stateProvider
     // .state('intro', {
@@ -21,7 +21,8 @@ app.config(function($stateProvider,$urlRouterProvider) {
     })
     .state('blueprint', {
       url: '/blueprint',
-      templateUrl: 'public/views/blueprint.html'
+      templateUrl: 'public/views/blueprint.html',
+      controller: 'BlueprintController'
     })
     .state('blueprint.office', {
       url: '/office',
@@ -47,6 +48,6 @@ app.config(function($stateProvider,$urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 })
 
-app.run(function () {
+.run(function() {
   // $state.transitionTo('intro');
 })

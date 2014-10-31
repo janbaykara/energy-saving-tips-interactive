@@ -8,29 +8,9 @@
   </figure>
   <section class="blueprint__tips">
     <ul class="tips box">
-      <li class="tips__item">
-        <div class="tips__item__counter"><i>1</i></div>
-        <div class="tips__item__text">Heating</div>
-        <div class="clearfix"></div>
-      </li>
-      <li class="tips__item">
-        <div class="tips__item__counter"><i>2</i></div>
-        <div class="tips__item__text">Computers</div>
-        <div class="clearfix"></div>
-      </li>
-      <li class="tips__item">
-        <div class="tips__item__counter"><i>3</i></div>
-        <div class="tips__item__text">Photocopiers</div>
-        <div class="clearfix"></div>
-      </li>
-      <li class="tips__item">
-        <div class="tips__item__counter"><i>4</i></div>
-        <div class="tips__item__text">Bulbs</div>
-        <div class="clearfix"></div>
-      </li>
-      <li class="tips__item">
-        <div class="tips__item__counter"><i>5</i></div>
-        <div class="tips__item__text">Doors</div>
+      <li ng-repeat='tip in blueprint.tips track by $index' class="tips__item complete">
+        <div class="tips__item__counter"><i>{{$index+1}}</i></div>
+        <div class="tips__item__text">{{tip.title}}</div>
         <div class="clearfix"></div>
       </li>
     </ol>

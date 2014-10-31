@@ -16,7 +16,7 @@ var dirs = {
               'assets/img/**/*.png'],
     svg:     ['assets/img/**/*.svg'],
     js:      ['assets/js/*.js'],
-    data:    ['assets/data/*.json'],
+    json:    ['assets/data/*.json'],
     sass:    ['assets/sass/*.scss'],
     fonts:   ['assets/fonts/*'],
     html:    ['assets/html/*']
@@ -37,7 +37,7 @@ gulp.task('install', function () {
 // ----------------------------------------------------------------
 // Styles
 
-  gulp.task('styles', function () {
+  gulp.task('css', function () {
     gulp.src(dirs.dev.sass)
     .pipe(plugins.sass({
         errLogToConsole: true
@@ -76,7 +76,7 @@ gulp.task('install', function () {
   });
 
   // Project JS
-  gulp.task('scripts', function() {
+  gulp.task('js', function() {
     gulp.src(dirs.dev.js)
     .pipe(plugins.concat('app.min.js'))
     .pipe(plugins.size({showFiles: true}))
@@ -86,13 +86,15 @@ gulp.task('install', function () {
   });
 
   // Datafiles
-  gulp.task('data', function() {
-    gulp.src(dirs.dev.data)
+  gulp.task('json', function() {
+    gulp.src(dirs.dev.json)
     .pipe(gulp.dest(dirs.prod.scripts));
   });
 
-  // Datafiles
-  gulp.task('views', function() {
+// ----------------------------------------------------------------
+// Views
+
+  gulp.task('html', function() {
     gulp.src(dirs.dev.html)
     .pipe(gulp.dest(dirs.prod.views));
   });
@@ -117,19 +119,19 @@ gulp.task('install', function () {
 // Tasks
 
 gulp.task('watch', function() {
-  gulp.watch(dirs.dev.js,     ['scripts']);
+  gulp.watch(dirs.dev.js,     ['js']);
   gulp.watch(dirs.dev.libs,   ['libs']);
-  gulp.watch(dirs.dev.data,   ['data']);
+  gulp.watch(dirs.dev.json,   ['json']);
   //
-  gulp.watch(dirs.dev.sass,   ['styles']);
+  gulp.watch(dirs.dev.sass,   ['css']);
   //
   gulp.watch(dirs.dev.fonts,  ['fonts']);
   gulp.watch(dirs.dev.img,    ['rasters']);
   gulp.watch(dirs.dev.svg,    ['vectors']);
   //
-  gulp.watch(dirs.dev.html,   ['views']);
+  gulp.watch(dirs.dev.html,   ['html']);
 });
 
-gulp.task('build', ['rasters', 'vectors', 'styles', 'fonts', 'scripts', 'libs', 'views', 'data']);
+gulp.task('build', ['rasters', 'vectors', 'css', 'fonts', 'js', 'libs', 'json', 'html']);
 gulp.task('init', ['install', 'build']);
 gulp.task('default', ['build', 'watch']);
