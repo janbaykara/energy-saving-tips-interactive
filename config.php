@@ -125,13 +125,8 @@ class App {
 
       <!-- Assets -->
           <link rel="stylesheet" type="text/css" href="{$this->CSSURL}/app.min.css">
-          <script src='//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js'></script>
           <script src='{$this->JSURL}/libs.min.js'></script>
           <script src='{$this->JSURL}/app.min.js'></script>
-
-        <!--[if lt IE 9]>
-          <link rel="stylesheet" type="text/css" href="{$this->CSSURL}/ie8.min.css">
-        <![endif]-->
 
       </head>
       <body {$this->BODYINJECT}>

@@ -4,7 +4,9 @@
     "angular": "~1.2.x",
     "angular-ui-router": "~0.2.11",
     "html5shiv": "~3.7.2",
-    "css3pie": "*"
+    "css3pie": "*",
+    "respond": "~1.4.2",
+    "json3": "~3.3.2"
   },
   "overrides": {
     "angular-ui-router": {
