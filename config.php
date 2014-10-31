@@ -121,7 +121,7 @@ class App {
       <!-- Font Icon set: font awesome from BootstrapCDN
           Example: https://fortawesome.github.io/Font-Awesome/examples/
           Library: https://fortawesome.github.io/Font-Awesome/icons/
-       --><link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+       --><link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css?#iefix" rel="stylesheet">
 
       <!-- Assets -->
           <link rel="stylesheet" type="text/css" href="{$this->CSSURL}/app.min.css">
@@ -130,13 +130,6 @@ class App {
 
       </head>
       <body {$this->BODYINJECT}>
-
-      <header class="row" id="document-head">
-        <h1 class="column small-12">{$this->PROJECTNAME}</h1>
-        <nav class="row">
-
-        </nav>
-      </header>
       <!-- ===============
       BEGIN CONTENT VIEW
       ================ -->
@@ -151,15 +144,6 @@ HTML;
       <!-- ===============
       END CONTENT VIEW
       ================ -->
-
-      <div id="document-close"></div>
-
-      <footer id="document-foot">
-        <div class='inner row'>
-          <div class="copyright column small-12">{$this->COPYRIGHT}</div>
-        </div>
-      </footer>
-
       <!-- Google Analytics -->
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

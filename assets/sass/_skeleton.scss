@@ -2,12 +2,20 @@
   Skeleton
 */
 
+html, body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
 * {
   transition: all 0.25s cubic-bezier(.54,.27,.27,.91);
   box-sizing: border-box;
 }
 
-::selection { color: $brand-color;  background: $background-color; }
+::selection {
+  color: $background-color;
+  background: $brand-color;
+}
 
 .content {
   max-width: 640px;

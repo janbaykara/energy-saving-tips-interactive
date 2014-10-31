@@ -48,7 +48,31 @@ $golden-ratio: 1.61803398875;
     }
 }
 
+@mixin p-h($top,$bottom) { padding-left: $top;  padding-right: $bottom; }
+@mixin p-v($top,$bottom) { padding-top: $top;   padding-bottom: $bottom; }
+@mixin m-h($top,$bottom) { margin-left: $top;   margin-right: $bottom; }
+@mixin m-v($top,$bottom) { margin-top: $top;    margin-bottom: $bottom; }
+
 @mixin golden-ratio($this: major,$length: 100%) {
   if: $this = major { $gr-length: $length / $golden-ratio; }
   if: $this = minor { $gr-length: $length - ($length / $golden-ratio); }
 }
+
+//
+$minor-second:        1.067;
+$major-second:        1.125;
+
+$minor-third:         1.200;
+$major-third:         1.250;
+
+$perfect-fourth:      1.333;
+$augmented-fourth:    1.414;
+
+$perfect-fifth:       1.500;
+
+$golden-ratio:        1.61803398875;
+$silver-ratio:        2.4142135623730950488;
+
+$euler-number:        2.71828;
+$pythagoras-constant: 1.4142135623;
+$pi:                  3.14159265359;

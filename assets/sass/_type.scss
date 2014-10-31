@@ -2,22 +2,45 @@
   Type
 */
 
+@font-face {
+    font-family: 'ThunderPants';
+    src: url('thunderpants-webfont.eot');
+    src: url('thunderpants-webfont.eot?#iefix') format('embedded-opentype'),
+         url('thunderpants-webfont.woff2') format('woff2'),
+         url('thunderpants-webfont.woff') format('woff'),
+         url('thunderpants-webfont.ttf') format('truetype'),
+         url('thunderpants-webfont.svg#thunder_pantsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // Typefaces
 %body-type {
   font: 16px/1.3em 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 %header-type {
-  @extend %body-type;
+  font-family: 'ThunderPants', 'Rockwell', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+  font-weight: normal;
 }
 
 // Applied
 html, body {
   @extend %body-type;
+                           font-size: 18px;
+  @include break(medium) { font-size: 16px; }
 }
 
 #{$headings} {
   @extend %header-type;
+  margin: 0;
+  line-height: 0.8em;
+}
+
+@for $i from 1 through 5 {
+  $ratio: $minor-second;
+  h#{$i} { font-size: (6em - $i) * $ratio; }
+  .f#{$i} { font-size: (6em - $i) * $ratio; }
 }
 
 // Rendering

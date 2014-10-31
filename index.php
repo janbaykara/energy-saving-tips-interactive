@@ -1,19 +1,20 @@
 <?php require("config.php");
 
 $app = new App();
-$app->HTMLINJECT = "ng-app='app'";
+$app->HTMLINJECT = "xmlns:ng='http://angularjs.org' id='ng-app' ng-app='app'";
 $app->BODYINJECT = 'ng-controller="AppController"';
 // $app->PAGETITLE;
 
 $app->document_head(); ?>
 
-<main id="wrapper">
-	<div class="row">
-		<h4 class="column small-12">Hello {{world}}.</h4>
-		<div class="column small-12">
-			<i class="fa fa-code placeholder-hero"></i>
-		</div>
-	</div>
-</main>
+<header class="app__header app__content"></header>
+
+<main ui-view></main>
+
+<div class="clearfix"></div>
+<footer class="app__footer app__content">
+  Brought to you by SwitchMyBusiness
+  <div class="copyright"><?=$app->COPYRIGHT?></div>
+</footer>
 
 <? $app->document_foot() ?>
