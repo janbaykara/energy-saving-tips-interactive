@@ -14,8 +14,5 @@ a {
     border-bottom-color: $link-color; }
 
   &:hover {
-    color: $link-color-hover;
-    border-bottom-color: $link-color;
-    border-bottom-width: 2px;
-    border-bottom-style: solid; }
+    color: $link-color-hover; }
 }

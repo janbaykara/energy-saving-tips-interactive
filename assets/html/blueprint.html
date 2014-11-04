@@ -10,10 +10,12 @@
     <h1 class="blueprint__header--generic">Energy Saving Tips</h1>
     <h2 class="blueprint__header--specific">In {{blueprint.name}}</h2>
   </header>
+
   <div class="blueprint">
     <figure class="blueprint__diagram">
       <img class="w100" src='public/images/blueprint-proto.png' />
     </figure>
+
     <section class="blueprint__tips" ui-view='tips'>
       <ol class="tips box">
         <li ng-repeat='tip in blueprint.tips track by $index' class="tips__item" ng-class='{"complete": tip.status === 2, "incomplete": tip.status === 0, "active": tip.status === 1}'>

@@ -4,14 +4,14 @@
   </header>
   <section ng-if="tip.info">
     <h4 class='tip-panel__section-heading'>You should know</h4>
-    <div clsas='tip-panel__section-content'>{{tip.info}}</div>
+    <div class='tip-panel__section-content'>{{tip.info}}</div>
   </section>
   <section ng-if="tip.advice">
     <h4 class='tip-panel__section-heading'>What to do</h4>
     <div class='tip-panel__section-content'>{{tip.advice}}</div>
   </section>
   <nav class='tip-panel__nav'>
-    <a ng-if='tip.i !== 4' ui-sref='blueprint.tip({ "tipSlug": tip.next.id })'>Next: {{tip.next.title}}</a>
-    <a ng-if='tip.i == 4' ui-sref='blueprint'>Back</a>
+    <a ng-if='tip.i !== 4' ui-sref='blueprint.tip({ "tipSlug": tip.next.id })'>{{tip.next.title}} <i class='fa fa-arrow-circle-right'></i></a>
+    <a ng-if='tip.i == 4' ui-sref='blueprint'><i class='fa fa-arrow-circle-left'></i> Back</a>
   </nav>
 </article>

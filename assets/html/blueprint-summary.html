@@ -1,7 +1,0 @@
-<ol class="tips box">
-  <li ng-repeat='tip in blueprint.tips track by $index' class="tips__item" ng-class='{"complete": tip.status === 2, "incomplete": tip.status === 0, "active": tip.status === 1}'>
-    <div class="tips__item__counter"><div><i>{{$index+1}}</i></div></div>
-    <a ui-sref='blueprint.tip({ "tipSlug": tip.id })' class="tips__item__name">{{tip.title}}</a>
-    <div class="clearfix"></div>
-  </li>
-</ol>

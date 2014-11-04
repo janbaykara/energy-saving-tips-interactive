@@ -170,36 +170,49 @@
 %panel-segment {
   padding: 0.5em 1.5em;
 }
+%generous-segment {
+  padding: 0.5em;
+}
 
 .tip-panel {
+  background: white;
+  border-radius: 6px;
+
   &__name {
-    @extend %panel-segment;
+    @extend %generous-segment;
 
     font-size: 2.5em;
     color: $brand-dark;
     background: $good;
     text-align: middle;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+    line-height: 0.75em;
   }
   &__section-heading {
     @extend %panel-segment;
-
     background: $brand-blue;
     color: white;
     font-size: 1.5em;
   }
-  &__description {
+  &__section-content {
     @extend %panel-segment;
     color: #7b93ab;
     text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     b { color: #4d8282; }
   }
   &__nav {
-    @extend %panel-segment;
+    @extend %generous-segment;
+    @extend %header-type;
 
     color: #c46857;
     font-size: 1.5em;
     text-align: center;
-    border-top: 1px solid
+    border-top: 1px solid #DADADA;
+    margin: 1em;
+    margin-top: 4px;
   }
 }
