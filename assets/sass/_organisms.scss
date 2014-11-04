@@ -70,6 +70,20 @@
     display: table;
   }
 
+  &__header {
+    &--generic {
+      @extend .aln-h-ml;
+      @extend .f2;
+      font-size: 1.7em;
+      opacity: 0.7;
+    }
+    &--specific {
+      @extend .aln-h-ml;
+      @extend .f3;
+      font-size: 2em;
+    }
+  }
+
   &__diagram {
     @extend .box;
 
@@ -107,42 +121,85 @@
     }
 
     &__counter {
-      display: table;
-      text-align: center;
+      display: inline-block;
       vertical-align: middle;
-      float: left;
 
-      width: $size;
-      height: $size;
+      div {
+        display: table;
+        text-align: center;
+        vertical-align: middle;
+        width: $size;
+        height: $size;
+        border-radius: 100px;
+        font-size: $size;
 
-      font-size: $size;
-      border-radius: 100px;
+        i {
+          display: table-cell;
+          font-style: normal;
+          vertical-align: middle; }
 
-      i { display: table-cell; font-style: normal; vertical-align: middle;}
-
-      .complete & {
-        color: $brand-dark;
-        background: $good;
-      }
-      .active & {
-        background: lighten($brand-dark,20%);
-        border: 2px solid $brand-beige;
-      }
-      .incomplete & {
-        color: $brand-dark;
-        background: $bad;
-        border: 2px solid $brand-beige;
+        .complete & {
+          color: $brand-dark;
+          background: $good;
+        }
+        .active & {
+          background: lighten($brand-dark,20%);
+          border: 2px solid $brand-beige;
+        }
+        .incomplete & {
+          color: $brand-dark;
+          background: $bad;
+          border: 2px solid $brand-beige;
+        }
       }
     }
 
-    &__text {
+    &__name{
+      vertical-align: middle;
       display: inline-block;
-      float: left;
-      margin-top: ($size * 0.25);
-      margin-left: 10px;
+      width: 80%;
+      // margin-top: ($size * 0.25);
+      margin-left: 0.2em;
       font-size: $size;
 
       color: $brand-lblue;
     }
+  }
+}
+
+%panel-segment {
+  padding: 0.5em 1.5em;
+}
+
+.tip-panel {
+  &__name {
+    @extend %panel-segment;
+
+    font-size: 2.5em;
+    color: $brand-dark;
+    background: $good;
+    text-align: middle;
+  }
+  &__section-heading {
+    @extend %panel-segment;
+
+    background: $brand-blue;
+    color: white;
+    font-size: 1.5em;
+  }
+  &__description {
+    @extend %panel-segment;
+    color: #7b93ab;
+    text-align: left;
+
+    b { color: #4d8282; }
+  }
+  &__nav {
+    @extend %panel-segment;
+
+    color: #c46857;
+    font-size: 1.5em;
+    text-align: center;
+    border-top: 1px solid
   }
 }

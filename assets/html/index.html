@@ -11,15 +11,6 @@
     <h3 class="white f4">Go ahead and click a building to find out more.</h3>
   </div>
   <nav class="building__nav">
-    <a class="building__nav__item" ui-sref="blueprint.office">Office</a>
-    <a class="building__nav__item" ui-sref="blueprint.office">Retail</a>
-    <a class="building__nav__item" ui-sref="blueprint.office">Hairdresser</a>
-    <a class="building__nav__item" ui-sref="blueprint.office">Pub</a>
-    <a class="building__nav__item" ui-sref="blueprint.office">Clinic</a>
-<!--     <a class="building__nav__item" ui-sref="blueprint.office">Office</a>
-    <a class="building__nav__item" ui-sref="blueprint.retail">Retail</a>
-    <a class="building__nav__item" ui-sref="blueprint.hairdresser">Hairdresser</a>
-    <a class="building__nav__item" ui-sref="blueprint.pub">Pub</a>
-    <a class="building__nav__item" ui-sref="blueprint.clinic">Clinic</a> -->
+    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item" ui-sref="blueprint({'blueprintSlug': blueprint.slug })">{{blueprint.name}}</a>
   </nav>
 </div>

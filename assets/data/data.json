@@ -1,162 +1,182 @@
 {
    "title":"Energy Saving Tips For Business",
-   "blueprints": [
-      {
-         "name":"Retail",
-         "id": "blueprint.retail",
-         "tips":[
-            {
-               "title":"Close the Door",
-               "id":"",
-               "description":"Research conducted by the University of Cambridge Department of Engineering for the Close the Door campaign discovered that significant energy savings can be achieved when doors remain shut during winter with minimal effect on transactions and footfall."
-            },
-            {
-               "title":"LED Lights",
-               "id":"",
-               "description":"By switching to low energy LED lighting you could save up to 75% on that energy consumption. As lighting accounts for an average of 28% of energy usage in retail environments, this could result in significantly lower bills."
-            },
-            {
-               "title":"Smart Heating",
-               "id":"",
-               "description":"Heating accounts for 29% of energy use in non-domestic buildings. A quick-fix that could save you up to a third on your heating, ventilation and air conditioning bills (HVAC) is to ensure that your system operating hours match the times when heating, ventilation and cooling are actually required."
-            },
-            {
-               "title":"Dead Band",
-               "id":"",
-               "description":"Setting a gap or ‘dead-band’ between heating and air conditioning temperatures will avoid the two systems operating at the same time. Introducing a gap of 5˚C could save you up to 10% of your heating and cooling costs."
-            },
-            {
-               "title":"Automatic Lighting",
-               "id":"",
-               "description":"Installing automatic lighting which is triggered by motion sensors or light-sensitive photocell controls will ensure that lights aren’t on in spaces that are unoccupied or where the natural light is sufficient. This could help to save you up to 20% on your lighting costs."
-            }
-         ]
-      },
-      {
-         "name":"Offices",
-         "id": "blueprint.office",
-         "tips":[
-            {
-               "title":"Lower Room Temperature",
-               "id":"",
-               "description":"Heating can account for up to 40% of energy costs in an office environment. Most people feel comfortable in the temperature range of 18-26˚C. Reducing heating temperatures by just 1˚C could cut your consumption by up to 8% in a year."
-            },
-            {
-               "title":"Computers",
-               "id":"",
-               "description":"Around two-thirds of the energy consumed in office environments is attributed to computers; both PCs and monitors. To save up to 30% of the energy costs associated with computer equipment, remind your employees to turn their computers and screens off at the end of the day rather than putting them on standby."
-            },
-            {
-               "title":"Photocopiers",
-               "id":"",
-               "description":"The office photocopier is often the highest single energy-using piece of equipment in your workplace. The heat components which fuse the toner to the paper are the biggest culprits. Try to use low melting points inks, and ensure standby features are enabled to slash copier energy use by up to 50%."
-            },
-            {
-               "title":"Energy Saving Lamps",
-               "id":"",
-               "description":"The correct lighting is vital for ensuring that the working environment is comfortable for your employees and encouraging peak productivity. By replacing your standard lights with energy-saving compact fluorescent lamps (CFLs), which use 75% less energy than tungsten bulbs, you are ensuring optimum light output and reducing your bills at the same time."
-            },
-            {
-               "title":"Doors",
-               "id":"",
-               "description":"Keeping the doors closed between heated and unheated areas (such as your store room, lobby, or hallways) could help to reduce your energy bills between 5 and 10% a year."
-            }
-         ]
-      },
-      {
-         "name":"Pubs and Bars",
-         "id": "blueprint.pub",
-         "tips":[
-            {
-               "title":"Cellar Cooling",
-               "id":"",
-               "description":"The recommended temperature for your cellar is between 11˚C and 13˚C. Overcooling this space by just 1˚C can add up to 10% on to your cellar energy costs. Check the cellar regularly with a separate thermometer to ensure that the sensor is operating reliably."
-            },
-            {
-               "title":"Occupany Sensors",
-               "id":"",
-               "description":"Lighting accounts for 25% of energy use within the average pub. Installing occupancy sensors could help you achieve savings of up to 50% on lighting costs. Consider them in low-traffic areas such as storerooms, toilets, cellars and function rooms."
-            },
-            {
-               "title":"Refrigerators",
-               "id":"",
-               "description":"Overcooling your refrigeration systems whether it’s canned and bottle drinks, frozen foods or fresh produce could be costing you more than you think. If the set cooling temperature can be raised by even 1˚C you could save between 2-4%. Just make sure that all temperatures lie within the safe food safety regulations (Food Safety Temperature Control Regulations 1995)."
-            },
-            {
-               "title":"Heat Zoning",
-               "id":"",
-               "description":"Zoning your business could help to reduce heating costs by up to 20%. By installing separate time and temperature controls for different zones within your building, you can manage your heating spend much more efficiently. For example, the main lounge needs to be regulated much more than occasional use function rooms."
-            },
-            {
-               "title":"The Simple Things",
-               "id":"",
-               "description":"Simple things like choosing the correct cookware for the job, keeping chiller and freezer doors closed and ensuring that dishwashers are fully loaded before the cycle starts are all easy to implement. Raising awareness of energy consumption with your kitchen staff could reduce your catering energy costs by up to 30%."
-            }
-         ]
-      },
-      {
-         "name":"Healthcare and Care Homes",
-         "id": "blueprint.clinic",
-         "tips":[
-            {
-               "title":"Smart Water",
-               "id":"",
-               "description":"Water costs within the healthcare infrastructure can be considerable, no matter what the size of the establishment. If possible consider installing infrared controllers on taps and toilets. These will only provide water when required and could save you up to 15% of water consumption per tap per year. Infrared controllers can also reduce the opportunity for the spread of germs and infections."
-            },
-            {
-               "title":"Switch-Off Policy",
-               "id":"",
-               "description":"Office equipment can account for more than 10% of total electricity use within healthcare organisations. By implementing a “switch off” policy where members of staff turn off computers and appliances in on-site staff residences such as kettle, cookers, and toasters when not in use, you could cut this cost significantly."
-            },
-            {
-               "title":"Energy Awareness",
-               "id":"",
-               "description":"A vital aspect of caring for patients, visitors and staff is ensuring that they are catered for. Simple actions to raise awareness amongst your staff could save you 25% in this area. This includes reminding staff to switch off grills, fryers and hobs immediately after use, using the right cookware for the task, and not turning cooking equipment on prematurely."
-            },
-            {
-               "title":"Insulation",
-               "id":"",
-               "description":"Typically two thirds of heat from hospitals and healthcare establishments is lost through the building fabric itself. By undertaking regular maintenance, implementing a regular housekeeping schedule for checking walls, floors, doors and windows, and maintaining in insulation levels, you could reduce this figure significantly."
-            },
-            {
-               "title":"Systems Maintenance",
-               "id":"",
-               "description":"Maintenance of your heating and cooling systems is crucial. Energy consumption can decrease by up to 60% if fans, air ducts and components are regularly cleaned and any damaged components replaced."
-            }
-         ]
-      },
-      {
-         "name":"Hairdressing",
-         "id": "blueprint.hairdresser",
-         "tips":[
-            {
-               "title":"Hot Water Storage",
-               "id":"",
-               "description":"Hot water is a necessity in any salon. If you find that you’re mixing in a lot of cold water to attain a comfortable temperature, your thermostat could be set too high. The optimum temperature for stored hot water is 60˚C; anything above this will be wasting energy and burning cash."
-            },
-            {
-               "title":"LED Lighting",
-               "id":"",
-               "description":"Updating your lighting is a simple way to update tired looking spaces. LED lights are not only brighter and clearer than standard halogen bulbs, but they actually use up to 80% less energy and provide about 50,000 hours of use."
-            },
-            {
-               "title":"Boiler Servicing",
-               "id":"",
-               "description":"Good housekeeping can help to reduce your bills too. By scheduling in regular boiler services you could save up to 5% on your heating bill as you won’t be paying for wasted energy output due to inefficiencies."
-            },
-            {
-               "title":"Computers",
-               "id":"",
-               "description":"Switch equipment off at the end of the day. This may sound like common sense, but switching off computers, rather than putting them on standby, turning off heat tools at the wall when not in use, and switching off lights in empty rooms could save you upwards of £100 a year."
-            },
-            {
-               "title":"Efficient Washing",
-               "id":"",
-               "description":"Washing and drying towels and capes is essential, but this is also one of the primary sources of wasted energy in salons. Ensure that the machine is full before starting a cycle and use the cool setting. When drying, don’t overload; it can take three times as long to dry, wasting much more energy than you need to."
-            }
-         ]
-      }
-   ],
+   "blueprints": [{
+      "name":"Retail",
+      "slug":"retail",
+      "id":"blueprint.retail",
+      "tips":[
+         {
+            "title":"Close the Door",
+            "id":"close-the-door",
+            "advice":"Research conducted by the University of Cambridge Department of Engineering for the Close the Door campaign discovered that significant energy savings can be achieved when doors remain shut during winter with minimal effect on transactions and footfall."
+         },
+         {
+            "title":"LED Lights",
+            "id":"led-lights",
+            "advice":"By switching to low energy LED lighting you could save up to 75% on that energy consumption. As lighting accounts for an average of 28% of energy usage in retail environments, this could result in significantly lower bills."
+         },
+         {
+            "title":"Smart Heating",
+            "id":"smart-heating",
+            "info": "Heating accounts for 29% of energy use in non-domestic buildings.",
+            "advice": "A quick-fix that could save you up to a third on your heating, ventilation and air conditioning bills (HVAC) is to ensure that your system operating hours match the times when heating, ventilation and cooling are actually required."
+         },
+         {
+            "title":"Dead Band",
+            "id":"dead-band",
+            "advice":"Setting a gap or ‘dead-band’ between heating and air conditioning temperatures will avoid the two systems operating at the same time. Introducing a gap of 5˚C could save you up to 10% of your heating and cooling costs."
+         },
+         {
+            "title":"Automatic Lighting",
+            "id":"automatic-lighting",
+            "advice":"Installing automatic lighting which is triggered by motion sensors or light-sensitive photocell controls will ensure that lights aren’t on in spaces that are unoccupied or where the natural light is sufficient. This could help to save you up to 20% on your lighting costs."
+         }
+      ]
+   },
+   {
+      "name":"Offices",
+      "slug":"office",
+      "id":"blueprint.office",
+      "tips":[
+         {
+            "title":"Lower Room Temperature",
+            "id":"lower-room-temperature",
+            "info":"Heating can account for up to 40% of energy costs in an office environment. Most people feel comfortable in the temperature range of 18-26˚C.",
+            "advice": "Reducing heating temperatures by just 1˚C could cut your consumption by up to 8% in a year."
+         },
+         {
+            "title":"Computers",
+            "id":"computers",
+            "info":"Around two-thirds of the energy consumed in office environments is attributed to computers; both PCs and monitors.",
+            "advice": "To save up to 30% of the energy costs associated with computer equipment, remind your employees to turn their computers and screens off at the end of the day rather than putting them on standby."
+         },
+         {
+            "title":"Photocopiers",
+            "id":"photocopiers",
+            "info":"The office photocopier is often the highest single energy-using piece of equipment in your workplace. The heat components which fuse the toner to the paper are the biggest culprits.",
+            "advice": "Try to use low melting points inks, and ensure standby features are enabled to slash copier energy use by up to 50%."
+         },
+         {
+            "title":"Energy Saving Lamps",
+            "id":"energy-saving-lamps",
+            "info":"The correct lighting is vital for ensuring that the working environment is comfortable for your employees and encouraging peak productivity.",
+            "advice": "By replacing your standard lights with energy-saving compact fluorescent lamps (CFLs), which use 75% less energy than tungsten bulbs, you are ensuring optimum light output and reducing your bills at the same time."
+         },
+         {
+            "title":"Doors",
+            "id":"doors",
+            "advice":"Keeping the doors closed between heated and unheated areas (such as your store room, lobby, or hallways) could help to reduce your energy bills between 5 and 10% a year."
+         }
+      ]
+   },
+   {
+      "name":"Pubs and Bars",
+      "slug":"pub",
+      "id":"blueprint.pub",
+      "tips":[
+         {
+            "title":"Cellar Cooling",
+            "id":"cellar-cooling",
+            "info":"The recommended temperature for your cellar is between 11˚C and 13˚C. Overcooling this space by just 1˚C can add up to 10% on to your cellar energy costs.",
+            "advice": "Check the cellar regularly with a separate thermometer to ensure that the sensor is operating reliably."
+         },
+         {
+            "title":"Occupany Sensors",
+            "id":"occupany-sensors",
+            "info":"Lighting accounts for 25% of energy use within the average pub.",
+            "advice": "Installing occupancy sensors could help you achieve savings of up to 50% on lighting costs. Consider them in low-traffic areas such as storerooms, toilets, cellars and function rooms."
+         },
+         {
+            "title":"Refrigerators",
+            "id":"refrigerators",
+            "info":"Overcooling your refrigeration systems whether it’s canned and bottle drinks, frozen foods or fresh produce could be costing you more than you think.",
+            "advice": "If the set cooling temperature can be raised by even 1˚C you could save between 2-4%. Just make sure that all temperatures lie within the safe food safety regulations (Food Safety Temperature Control Regulations 1995)."
+         },
+         {
+            "title":"Heat Zoning",
+            "id":"heat-zoning",
+            "info":"Zoning your business could help to reduce heating costs by up to 20%.",
+            "advice": "By installing separate time and temperature controls for different zones within your building, you can manage your heating spend much more efficiently. For example, the main lounge needs to be regulated much more than occasional use function rooms."
+         },
+         {
+            "title":"The Simple Things",
+            "id":"the-simple-things",
+            "advice":"Simple things like choosing the correct cookware for the job, keeping chiller and freezer doors closed and ensuring that dishwashers are fully loaded before the cycle starts are all easy to implement. Raising awareness of energy consumption with your kitchen staff could reduce your catering energy costs by up to 30%."
+         }
+      ]
+   },
+   {
+      "name":"Healthcare and Care Homes",
+      "slug":"clinic",
+      "id":"blueprint.clinic",
+      "tips":[
+         {
+            "title":"Smart Water",
+            "id":"smart-water",
+            "info":"Water costs within the healthcare infrastructure can be considerable, no matter what the size of the establishment.",
+            "advice": "If possible consider installing infrared controllers on taps and toilets. These will only provide water when required and could save you up to 15% of water consumption per tap per year. Infrared controllers can also reduce the opportunity for the spread of germs and infections."
+         },
+         {
+            "title":"Switch-Off Policy",
+            "id":"switch-off-policy",
+            "info":"Office equipment can account for more than 10% of total electricity use within healthcare organisations.",
+            "advice": "By implementing a “switch off” policy where members of staff turn off computers and appliances in on-site staff residences such as kettle, cookers, and toasters when not in use, you could cut this cost significantly."
+         },
+         {
+            "title":"Energy Awareness",
+            "id":"energy-awareness",
+            "info":"A vital aspect of caring for patients, visitors and staff is ensuring that they are catered for. Simple actions to raise awareness amongst your staff could save you 25% in this area.",
+            "advice": "This includes reminding staff to switch off grills, fryers and hobs immediately after use, using the right cookware for the task, and not turning cooking equipment on prematurely."
+         },
+         {
+            "title":"Insulation",
+            "id":"insulation",
+            "info":"Typically two thirds of heat from hospitals and healthcare establishments is lost through the building fabric itself.",
+            "advice": "By undertaking regular maintenance, implementing a regular housekeeping schedule for checking walls, floors, doors and windows, and maintaining in insulation levels, you could reduce this figure significantly."
+         },
+         {
+            "title":"Systems Maintenance",
+            "id":"systems-maintenance",
+            "info":"Maintenance of your heating and cooling systems is crucial.",
+            "advice": "Energy consumption can decrease by up to 60% if fans, air ducts and components are regularly cleaned and any damaged components replaced."
+         }
+      ]
+   },
+   {
+      "name":"Hairdressing",
+      "slug":"hairdresser",
+      "id":"blueprint.hairdresser",
+      "tips":[
+         {
+            "title":"Hot Water Storage",
+            "id":"hot-water-storage",
+            "advice":"Hot water is a necessity in any salon. If you find that you’re mixing in a lot of cold water to attain a comfortable temperature, your thermostat could be set too high. The optimum temperature for stored hot water is 60˚C; anything above this will be wasting energy and burning cash."
+         },
+         {
+            "title":"LED Lighting",
+            "id":"led-lighting",
+            "info":"Updating your lighting is a simple way to update tired looking spaces. LED lights are not only brighter and clearer than standard halogen bulbs, but they actually use up to 80% less energy and provide about 50,000 hours of use."
+         },
+         {
+            "title":"Boiler Servicing",
+            "id":"boiler-servicing",
+            "info":"Good housekeeping can help to reduce your bills too.",
+            "advice": "By scheduling in regular boiler services you could save up to 5% on your heating bill as you won’t be paying for wasted energy output due to inefficiencies."
+         },
+         {
+            "title":"Computers",
+            "id":"computers",
+            "advice":"Switch equipment off at the end of the day. This may sound like common sense, but switching off computers, rather than putting them on standby, turning off heat tools at the wall when not in use, and switching off lights in empty rooms could save you upwards of £100 a year."
+         },
+         {
+            "title":"Efficient Washing",
+            "id":"efficient-washing",
+            "info":"Washing and drying towels and capes is essential, but this is also one of the primary sources of wasted energy in salons.",
+            "advice": "Ensure that the machine is full before starting a cycle and use the cool setting. When drying, don’t overload; it can take three times as long to dry, wasting much more energy than you need to."
+         }
+      ]
+   }
+],
    "sources":[
       "http://www.closethedoor.org.uk/files/3713/5402/3915/basarir-report.pdf",
       "http://www.theguardian.com/small-business-network/eon-energy-partner-zone/save-energy-money-smes",
