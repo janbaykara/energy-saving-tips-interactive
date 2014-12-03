@@ -9,7 +9,7 @@ html, body {
 }
 
 * {
-  transition: all 0.25s cubic-bezier(.54,.27,.27,.91);
+  transition: all 0.25s #{$swift};
   box-sizing: border-box;
 }
 
@@ -22,4 +22,27 @@ html, body {
   max-width: 640px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+.app {
+  &__header {
+    // @include m-v(0em,1em);
+    // @include p-v(1em,0em);
+  }
+
+  &__content {
+    width: 100%;
+    @include m-h(auto,auto);
+    @include p-h(10px,10px);
+    @include break(medium) { @include p-h(20px,20px); }
+    @include break(large) { @include p-h(40px,40px); }
+    @include break(extralarge) { @include p-h(40px,40px); }
+  }
+
+  &__footer {
+    @include m-v(1em,0em);
+    @include p-v(0em,1em);
+    font-size: 0.6em; line-height: 1.4em;
+    &, & * { color: lighten($brand-dark,15%) }
+  }
 }

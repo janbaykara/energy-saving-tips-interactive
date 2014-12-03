@@ -2,28 +2,6 @@
   Organisms
 */
 
-.app {
-  &__header {
-    // @include m-v(0em,1em);
-    // @include p-v(1em,0em);
-  }
-
-  &__content {
-    @include m-h(auto,auto);
-    @include p-h(10px,10px);
-    @include break(medium) { @include p-h(20px,20px); }
-    @include break(large) { @include p-h(40px,40px); }
-    @include break(extralarge) { @include p-h(40px,40px); width: 80%; }
-  }
-
-  &__footer {
-    @include m-v(1em,0em);
-    @include p-v(0em,1em);
-    font-size: 0.6em; line-height: 1.4em;
-    &, & * { color: lighten($brand-dark,15%) }
-  }
-}
-
 .index {
   &__title {
     text-align: center;
@@ -102,7 +80,7 @@
       display: table-cell;
       padding: 10px;
       vertical-align: $align;
-      width: 40%;
+      width: 25%;
     }
   }
 }
@@ -141,10 +119,10 @@
     &__name{
       vertical-align: middle;
       display: inline-block;
-      width: 80%;
-      // margin-top: ($size * 0.25);
+      width: 65%;
       margin-left: 0.2em;
-      font-size: $size;
+      font-size: 1.9em;
+      line-height: 0.9em;
 
       color: $brand-lblue;
     }
@@ -152,7 +130,7 @@
 }
 
 %panel-segment {
-  padding: 0.5em 1.5em;
+  padding: 0.5em 30px;
 }
 %generous-segment {
   padding: 0.5em;
@@ -161,6 +139,9 @@
 .tip-panel {
   background: white;
   border-radius: 6px;
+  position: relative;
+  min-width: 320px;
+
   &__index {
     @include center-circle(1.9em);
     @extend %header-type;
@@ -182,6 +163,8 @@
     background: $good;
     text-align: middle;
     border-radius: 6px 6px 0px 0px;
+    border: 2px solid lighten($good,5%);
+    border-bottom: none;
     text-align: center;
     line-height: 0.75em;
   }

@@ -7,9 +7,9 @@ $complementary-color: adjust_hue($brand-color, 180);
 $secondary-color: 	  adjust_hue($brand-color, 120);
 $tertiary-color: 	  	adjust_hue($brand-color, -120);
 
-$good: #00ff7b;
+$good: #00e66e;
 $bad: #ff5647;
-$brand-red: #cc4f3d;
+$brand-red: #c46857;
 $brand-blue: #4d8282;
 $brand-lblue: #3dc7cc;
 $brand-dark: #314240;
@@ -20,7 +20,7 @@ $brand-beige-end: #ffcb8f;
 $text-color:         	$brand-beige;
 $background-color:   	$brand-dark;
 
-$link-color:          $complementary-color;
+$link-color:          $brand-red;
 $link-color-hover:    lighten($link-color,10%);
 $link-color-active:   lighten($link-color,20%);
 $link-color-visited:  $link-color;
