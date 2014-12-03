@@ -13,6 +13,8 @@ app.controller('BlueprintController', function($scope,$stateParams,Data,Utils) {
     $scope.blueprint = _.filter($scope.Data.blueprints, function(blueprint) {
       return blueprint.slug == $stateParams.blueprintSlug;
     })[0];
+
+    $('#blueprint-name').text('for '+$scope.blueprint.shortname)
   });
 });
 

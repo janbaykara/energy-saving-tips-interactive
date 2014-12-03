@@ -71,17 +71,8 @@
   }
 
   &__header {
-    &--generic {
-      @extend .aln-h-ml;
-      @extend .f2;
-      font-size: 1.7em;
-      opacity: 0.7;
-    }
-    &--specific {
-      @extend .aln-h-ml;
-      @extend .f3;
-      font-size: 2em;
-    }
+    text-align: center;
+    svg { width: 500px; }
   }
 
   &__diagram {

@@ -2,6 +2,7 @@
    "title":"Energy Saving Tips For Business",
    "blueprints": [{
       "name":"Retail",
+      "shortname": "Retail",
       "slug":"retail",
       "id":"blueprint.retail",
       "tips":[
@@ -35,6 +36,7 @@
    },
    {
       "name":"Offices",
+      "shortname": "Offices",
       "slug":"office",
       "id":"blueprint.office",
       "tips":[
@@ -71,6 +73,7 @@
    },
    {
       "name":"Pubs and Bars",
+      "shortname":"Pubs and Bars",
       "slug":"pub",
       "id":"blueprint.pub",
       "tips":[
@@ -107,6 +110,7 @@
    },
    {
       "name":"Healthcare and Care Homes",
+      "shortname":"Healthcare",
       "slug":"clinic",
       "id":"blueprint.clinic",
       "tips":[
@@ -144,6 +148,7 @@
    },
    {
       "name":"Hairdressing",
+      "shortname": "Hairdressers",
       "slug":"hairdresser",
       "id":"blueprint.hairdresser",
       "tips":[
