@@ -109,7 +109,6 @@
 .tips {
   &__item {
     @extend %header-type;
-    $size: 1.5em;
 
     list-style: none;
     width: 100%;
@@ -121,36 +120,20 @@
     }
 
     &__counter {
-      display: inline-block;
-      vertical-align: middle;
+      @include center-circle(2em);
 
-      div {
-        display: table;
-        text-align: center;
-        vertical-align: middle;
-        width: $size;
-        height: $size;
-        border-radius: 100px;
-        font-size: $size;
-
-        i {
-          display: table-cell;
-          font-style: normal;
-          vertical-align: middle; }
-
-        .complete & {
-          color: $brand-dark;
-          background: $good;
-        }
-        .active & {
-          background: lighten($brand-dark,20%);
-          border: 2px solid $brand-beige;
-        }
-        .incomplete & {
-          color: $brand-dark;
-          background: $bad;
-          border: 2px solid $brand-beige;
-        }
+      > div {
+        background: lighten($brand-dark,20%);
+        border: 2px solid $brand-beige;
+      }
+      &.complete > div {
+        color: $brand-dark;
+        background: $good;
+      }
+      &.incomplete > div {
+        color: $brand-dark;
+        background: $bad;
+        border: 2px solid $brand-beige;
       }
     }
 
@@ -177,6 +160,18 @@
 .tip-panel {
   background: white;
   border-radius: 6px;
+  &__index {
+    @include center-circle(1.9em);
+    @extend %header-type;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    > div {
+      background: white;
+      color: darken($good,5%);
+      border: 3px solid $good;
+    }
+  }
 
   &__name {
     @extend %generous-segment;
