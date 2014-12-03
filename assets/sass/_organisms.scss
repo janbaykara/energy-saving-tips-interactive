@@ -67,6 +67,8 @@
 
 .blueprint {
   $align: #{"middle"};
+  margin: 0 auto;
+  width: 100%;
 
   @include break(medium) {
     vertical-align: $align;
@@ -81,14 +83,19 @@
   &__diagram {
     @extend .box;
 
+    position: relative;
+
     @include break(medium) {
       display: table-cell;
       padding: 10px;
       vertical-align: $align;
-      width: 60%;
+      width: 65%;
     }
 
-    img { @extend .w100; max-width: 100%; }
+    img {
+      @extend .w100;
+      position: absolute;
+    }
   }
   &__tips {
     @include break(medium) {

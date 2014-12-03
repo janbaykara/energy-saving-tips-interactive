@@ -12,7 +12,11 @@
 
   <div class="blueprint">
     <figure class="blueprint__diagram">
-      <img class="w100" src='public/images/blueprint-proto.png' />
+      <img class="w100" ng-src='public/images/blueprint_{{blueprint.slug}}.svg' />
+      <img class="w100"
+        ng-repeat='tip in blueprint.tips'
+        onerror='this.style.display = "none"'
+        ng-src='public/images/blueprint_overlay-{{tip.id}}.svg' />
     </figure>
 
     <section class="blueprint__tips" ui-view='tips'>
