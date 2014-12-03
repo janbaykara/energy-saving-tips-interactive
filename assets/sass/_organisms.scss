@@ -26,9 +26,12 @@
 
 .index {
   &__title {
+    text-align: center;
     padding: 2em;
     overflow: hidden;
-    font-size: 0.6em;
+    svg { width: 100%; }
+    @include break(medium) { svg { width: 60%; } }
+    @include break(extralarge) { svg { width: 50%; } }
   }
 
   &__summary {
