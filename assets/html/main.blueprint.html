@@ -1,0 +1,26 @@
+
+  <div class="table blueprint">
+    <div class='tr'>
+      <section class='td blueprint__diagram'>
+        <img class="w100" ng-src='public/images/blueprints/blueprint_{{blueprint.slug}}.svg' />
+        <img class="w100"
+          ng-repeat='tip in blueprint.tips'
+          onerror='this.style.display = "none"'
+          ng-src='public/images/blueprints/blueprint_overlay-{{tip.id}}.svg'
+          id='tip-{{tip.id}}'
+          ng-class='{"xxxxxx": $state.params.tipSlug == tip.id}' />
+      </section>
+
+      <aside class='td'>
+        <section class="blueprint__tips" ui-view='tips'>
+          <ol class="tips box">
+            <li ng-repeat='tip in blueprint.tips track by $index' class="tips__item" ng-class='{"complete": tip.status === 2, "incomplete": tip.status === 0, "active": tip.status === 1}'>
+              <div class="tips__item__counter"><div><i>{{$index+1}}</i></div></div>
+              <a ui-sref='main.blueprint.tip({ "tipSlug": tip.id })' class="tips__item__name">{{tip.title}}</a>
+              <div class="clearfix"></div>
+            </li>
+          </ol>
+        </section>
+      </aside>
+    </div>
+  </div>

@@ -51,6 +51,10 @@ $gap-l: 30px;
   .s#{$i}0 { @extend .w#{$i}0; @extend .h#{$i}0; }
   // .s#{$i}0 { width: $i * 10%; height: $i * 10%; }
 }
+//
+.table { display: table; }
+.tr { display: table-row; }
+.td { display: table-cell; }
 
 // ------ Typographical -------
 //

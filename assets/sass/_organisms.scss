@@ -21,36 +21,58 @@
   }
 }
 
-.building__nav {
-  font-size: 0em;
-  line-height: 0;
+.building {
+  &__nav {
+    font-size: 0em;
+    line-height: 0;
+    text-align: center;
 
-  &__item {
-    font-size: initial;
-    line-height: initial;
-    display: inline-block;
-    margin: 0; padding: 0;
-    width: 50%;
-    height: 200px;
-    border: 1px solid rgba(white,0.3);
+    &__item {
+      font-size: initial;
+      line-height: initial;
+      display: inline-block;
+      margin: 0; padding: 0;
+      width: 20%;
+      vertical-align: bottom;
+
+      img { display: block; max-height: 400px; }
+    }
+  }
+
+  &-hairdresser {
+    @extend %overlap;
+    $kern: -1.35%;
+    margin-left: $kern;
+    margin-right: $kern;
+  }
+  &-clinic {
+    @extend %overlap;
+    $kern: -0.6%;
+    margin-left: $kern;
+    margin-right: $kern;
+  }
+  &-retail {
+    @extend %overlap;
+    $kern: -1.2%;
+    margin-left: $kern;
+    margin-right: $kern;
   }
 }
 
-.buildings-nav {
-  // ...
-  &--min {
-    // ...@
-  }
+%overlap {
+  z-index: 100;
+  position: relative;
 }
 
 .blueprint {
-  $align: #{"middle"};
   margin: 0 auto;
   width: 100%;
 
-  @include break(medium) {
-    vertical-align: $align;
-    display: table;
+  &.table {
+    width: 1140px;
+    .td {
+      height: 600px;
+    }
   }
 
   &__header {
@@ -64,9 +86,7 @@
     position: relative;
 
     @include break(medium) {
-      display: table-cell;
       padding: 10px;
-      vertical-align: $align;
       width: 65%;
     }
 
@@ -77,15 +97,16 @@
   }
   &__tips {
     @include break(medium) {
-      display: table-cell;
       padding: 10px;
-      vertical-align: $align;
       width: 25%;
     }
   }
 }
 
 .tips {
+  vertical-align: middle;
+  display: inline-block;
+
   &__item {
     @extend %header-type;
 
@@ -99,7 +120,7 @@
     }
 
     &__counter {
-      @include center-circle(2em);
+      @include center-circle(75px,2.5em);
 
       > div {
         background: lighten($brand-dark,20%);

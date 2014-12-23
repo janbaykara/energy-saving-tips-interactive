@@ -9,7 +9,7 @@ $app->document_head(); ?>
 
 <header class="app__header app__content"></header>
 
-<main ui-view></main>
+<div ui-view='app'></div>
 
 <div class="clearfix"></div>
 <footer class="app__footer app__content">

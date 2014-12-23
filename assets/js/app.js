@@ -3,26 +3,30 @@ var app = angular.module('app', ['ui.router','ngAnimate'])
 .config(function($stateProvider,$urlRouterProvider) {
 
   $stateProvider
-    .state('index', {
+    .state('main', {
       url: '/',
-      templateUrl: 'public/views/index.html'
+      views: {
+        'app': {
+          templateUrl: 'public/views/main.html'
+        }
+      }
     })
-    .state('blueprint', {
-      url: '/:blueprintSlug',
+    .state('main.blueprint', {
+      url: ':blueprintSlug',
       controller: 'BlueprintController',
       views: {
-        '@': {
-          templateUrl: 'public/views/blueprint.html',
+        'content': {
+          templateUrl: 'public/views/main.blueprint.html',
           controller: 'BlueprintController',
         }
       }
     })
-    .state('blueprint.tip', {
+    .state('main.blueprint.tip', {
       url: '/:tipSlug',
       controller: 'TipController',
       views: {
         'tips': {
-          templateUrl: 'public/views/blueprint-tip.html',
+          templateUrl: 'public/views/main.blueprint.tip.html',
           controller: 'TipController'
         }
       }

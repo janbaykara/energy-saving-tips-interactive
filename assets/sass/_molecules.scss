@@ -2,7 +2,7 @@
   Molecules
 */
 
-@mixin center-circle($size: 1.5em) {
+@mixin center-circle($size: 1.5em,$font: 1.5em) {
   display: inline-block;
   vertical-align: middle;
 
@@ -13,7 +13,7 @@
     width: $size;
     height: $size;
     border-radius: 100px;
-    font-size: $size;
+    font-size: $font;
 
     i {
       display: table-cell;

@@ -70,45 +70,7 @@
             "advice":"Keeping the doors closed between heated and unheated areas (such as your store room, lobby, or hallways) could help to reduce your energy bills between 5 and 10% a year."
          }
       ]
-   },
-   {
-      "name":"Pubs and Bars",
-      "shortname":"Pubs and Bars",
-      "slug":"pub",
-      "id":"blueprint.pub",
-      "tips":[
-         {
-            "title":"Cellar Cooling",
-            "id":"cellar-cooling",
-            "info":"The recommended temperature for your cellar is between 11˚C and 13˚C. Overcooling this space by just 1˚C can add up to 10% on to your cellar energy costs.",
-            "advice": "Check the cellar regularly with a separate thermometer to ensure that the sensor is operating reliably."
-         },
-         {
-            "title":"Occupany Sensors",
-            "id":"occupany-sensors",
-            "info":"Lighting accounts for 25% of energy use within the average pub.",
-            "advice": "Installing occupancy sensors could help you achieve savings of up to 50% on lighting costs. Consider them in low-traffic areas such as storerooms, toilets, cellars and function rooms."
-         },
-         {
-            "title":"Refrigerators",
-            "id":"refrigerators",
-            "info":"Overcooling your refrigeration systems whether it’s canned and bottle drinks, frozen foods or fresh produce could be costing you more than you think.",
-            "advice": "If the set cooling temperature can be raised by even 1˚C you could save between 2-4%. Just make sure that all temperatures lie within the safe food safety regulations (Food Safety Temperature Control Regulations 1995)."
-         },
-         {
-            "title":"Heat Zoning",
-            "id":"heat-zoning",
-            "info":"Zoning your business could help to reduce heating costs by up to 20%.",
-            "advice": "By installing separate time and temperature controls for different zones within your building, you can manage your heating spend much more efficiently. For example, the main lounge needs to be regulated much more than occasional use function rooms."
-         },
-         {
-            "title":"The Simple Things",
-            "id":"the-simple-things",
-            "advice":"Simple things like choosing the correct cookware for the job, keeping chiller and freezer doors closed and ensuring that dishwashers are fully loaded before the cycle starts are all easy to implement. Raising awareness of energy consumption with your kitchen staff could reduce your catering energy costs by up to 30%."
-         }
-      ]
-   },
-   {
+   },{
       "name":"Healthcare and Care Homes",
       "shortname":"Healthcare",
       "slug":"clinic",
@@ -143,6 +105,42 @@
             "id":"systems-maintenance",
             "info":"Maintenance of your heating and cooling systems is crucial.",
             "advice": "Energy consumption can decrease by up to 60% if fans, air ducts and components are regularly cleaned and any damaged components replaced."
+         }
+      ]
+   },{
+      "name":"Pubs and Bars",
+      "shortname":"Pubs and Bars",
+      "slug":"pub",
+      "id":"blueprint.pub",
+      "tips":[
+         {
+            "title":"Cellar Cooling",
+            "id":"cellar-cooling",
+            "info":"The recommended temperature for your cellar is between 11˚C and 13˚C. Overcooling this space by just 1˚C can add up to 10% on to your cellar energy costs.",
+            "advice": "Check the cellar regularly with a separate thermometer to ensure that the sensor is operating reliably."
+         },
+         {
+            "title":"Occupancy Sensors",
+            "id":"occupancy-sensors",
+            "info":"Lighting accounts for 25% of energy use within the average pub.",
+            "advice": "Installing occupancy sensors could help you achieve savings of up to 50% on lighting costs. Consider them in low-traffic areas such as storerooms, toilets, cellars and function rooms."
+         },
+         {
+            "title":"Refrigerators",
+            "id":"refrigerators",
+            "info":"Overcooling your refrigeration systems whether it’s canned and bottle drinks, frozen foods or fresh produce could be costing you more than you think.",
+            "advice": "If the set cooling temperature can be raised by even 1˚C you could save between 2-4%. Just make sure that all temperatures lie within the safe food safety regulations (Food Safety Temperature Control Regulations 1995)."
+         },
+         {
+            "title":"Heat Zoning",
+            "id":"heat-zoning",
+            "info":"Zoning your business could help to reduce heating costs by up to 20%.",
+            "advice": "By installing separate time and temperature controls for different zones within your building, you can manage your heating spend much more efficiently. For example, the main lounge needs to be regulated much more than occasional use function rooms."
+         },
+         {
+            "title":"The Simple Things",
+            "id":"the-simple-things",
+            "advice":"Simple things like choosing the correct cookware for the job, keeping chiller and freezer doors closed and ensuring that dishwashers are fully loaded before the cycle starts are all easy to implement. Raising awareness of energy consumption with your kitchen staff could reduce your catering energy costs by up to 30%."
          }
       ]
    },
