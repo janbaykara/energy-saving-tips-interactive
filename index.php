@@ -12,9 +12,9 @@ $app->document_head(); ?>
 <div ui-view='app'></div>
 
 <div class="clearfix"></div>
-<footer class="app__footer app__content">
+<!-- <footer class="app__footer app__content">
   Brought to you by SwitchMyBusiness
   <div class="copyright"><?=$app->COPYRIGHT?></div>
-</footer>
+</footer> -->
 
 <? $app->document_foot() ?>
