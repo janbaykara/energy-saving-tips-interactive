@@ -21,6 +21,16 @@ app.controller('BlueprintController', function($scope,$state,$stateParams,$timeo
     $('.building__nav__item').addClass('js-inactiveBuilding')
     $('.building-'+$scope.blueprint.slug).addClass('js-activeBuilding').removeClass('js-inactiveBuilding');
   });
+
+  $scope.ifIsTip = function(shouldBe) {
+    return shouldBe == $state.params.tipSlug;
+  }
+  $scope.ifNotTip = function(shouldntBe) {
+    return shouldntBe != $state.params.tipSlug;
+  }
+  $scope.isSetTip = function() {
+    return (typeof $state.params.tipSlug != 'undefined');
+  }
 });
 
 app.controller('TipController', function($scope,$state,$stateParams,Data) {

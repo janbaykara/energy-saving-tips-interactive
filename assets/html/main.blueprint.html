@@ -8,7 +8,7 @@
           onerror='this.style.display = "none"'
           ng-src='public/images/blueprints/blueprint_overlay-{{tip.id}}.svg'
           id='tip-{{tip.id}}'
-          ng-class='{"xxxxxx": $state.params.tipSlug == tip.id}' />
+          ng-class='{"hidden-tip": ifNotTip(tip.id) && isSetTip(), "highlighted-tip": ifIsTip(tip.id)}' />
       </section>
 
       <aside class='td'>
