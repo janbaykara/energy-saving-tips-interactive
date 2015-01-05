@@ -3,7 +3,7 @@
     <!--ui-sref='main'--><a><span ng-include="'public/images/logo_semi-editable.svg'"></span></a>
   </div>
   <nav class="building__nav">
-    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img src='public/images/buildings/fixed_height/{{blueprint.slug}}.svg'/></a>
+    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img src='public/images/buildings/variable_height/{{blueprint.slug}}.svg'/></a>
   </nav>
   <div style='background: #e3d8c1; height: 18px;'></div>
 </div>

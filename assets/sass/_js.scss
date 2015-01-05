@@ -10,3 +10,20 @@
   font-family: monospace;
   font-size: 11px;
 }
+
+.js-activeBuilding img {
+  width: 27.5%;
+  // height: 400px;
+  img { z-index: 999; }
+}
+.js-inactiveBuilding img {
+  width: 15%;
+  // height: 200px;
+}
+.current {
+  width: 25%;
+  margin: 20px 5% 0px;
+}
+.notCurrent {
+  width: 12.5%;
+}

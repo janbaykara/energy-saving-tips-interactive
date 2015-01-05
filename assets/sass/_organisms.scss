@@ -20,40 +20,45 @@
     h3 + h3 { margin-top: 0.5em; }
   }
 }
-
 .building {
   &__nav {
     font-size: 0em;
     line-height: 0;
     text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
 
     &__item {
       font-size: initial;
       line-height: initial;
-      display: inline-block;
+      display: inline;
       margin: 0; padding: 0;
-      width: 20%;
+      // width: 20%;
       vertical-align: bottom;
 
-      img { display: block; max-height: 400px; }
+      img {
+        transition-duration: 0.5s;
+        // display: block;
+        // max-height: 400px;
+      }
     }
   }
 
   &-hairdresser {
     @extend %overlap;
-    $kern: -1.35%;
+    $kern: -2%;
     margin-left: $kern;
     margin-right: $kern;
   }
   &-clinic {
     @extend %overlap;
-    $kern: -0.6%;
+    $kern: -1%;
     margin-left: $kern;
     margin-right: $kern;
   }
   &-retail {
     @extend %overlap;
-    $kern: -1.2%;
+    $kern: -1.5%;
     margin-left: $kern;
     margin-right: $kern;
   }

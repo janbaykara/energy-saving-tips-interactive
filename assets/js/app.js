@@ -33,7 +33,3 @@ var app = angular.module('app', ['ui.router','ngAnimate'])
     })
   $urlRouterProvider.otherwise('/');
 })
-
-.run(function($stateProvider,Data) {
-
-})
