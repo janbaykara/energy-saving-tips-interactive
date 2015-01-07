@@ -43,6 +43,10 @@
       vertical-align: bottom;
       line-height: 0;
 
+      $kern: -1.4%;
+      margin-left: $kern;
+      margin-right: $kern;
+
       img {
         transition-duration: 0.5s;
         width: 20%;
@@ -52,23 +56,10 @@
     }
   }
 
-  &-hairdresser {
-    @extend %overlap;
-    $kern: -2%;
-    margin-left: $kern;
-    margin-right: $kern;
-  }
-  &-clinic {
-    @extend %overlap;
-    $kern: -1%;
-    margin-left: $kern;
-    margin-right: $kern;
-  }
+  &-hairdresser,
+  &-clinic,
   &-retail {
     @extend %overlap;
-    $kern: -1.5%;
-    margin-left: $kern;
-    margin-right: $kern;
   }
 }
 
