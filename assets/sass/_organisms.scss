@@ -16,6 +16,8 @@
     padding: 2em;
     overflow: hidden;
     font-size: 0.8em;
+    max-width: 768px;
+    margin: 0 auto;
 
     h3 + h3 { margin-top: 0.5em; }
   }

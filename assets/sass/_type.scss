@@ -27,8 +27,10 @@
 // Applied
 html, body {
   @extend %body-type;
-                           font-size: 18px;
-  @include break(medium) { font-size: 16px; }
+                            font-size: 14px;
+  @include break(small)   { font-size: 15px; }
+  @include break(medium)  { font-size: 16px; }
+  @include break(large)   { font-size: 18px; }
 }
 
 #{$headings} {
@@ -39,8 +41,7 @@ html, body {
 
 @for $i from 1 through 5 {
   $ratio: $minor-second;
-  h#{$i} { font-size: (6em - $i) * $ratio; }
-  .f#{$i} { font-size: (6em - $i) * $ratio; }
+  h#{$i}, .f#{$i} { font-size: (6em - $i) * $ratio; }
 }
 
 // Rendering
