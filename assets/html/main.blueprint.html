@@ -2,11 +2,11 @@
   <div class="table blueprint">
     <div class='tr'>
       <section class='td blueprint__diagram'>
-        <img class="w100" ng-src='public/images/blueprints/blueprint_{{blueprint.slug}}.svg' />
-        <img class="w100"
+        <img class="w100 blueprint__diagram__base" ng-src='public/images/blueprints/blueprint_{{blueprint.slug}}.svg' />
+        <img class="w100 blueprint__diagram__overlay"
           ng-repeat='tip in blueprint.tips'
           onerror='this.style.display = "none"'
-          ng-src='public/images/blueprints/blueprint_overlay-{{tip.id}}.svg'
+          ng-src='public/images/blueprints/blueprint_overlay-{{blueprint.slug}}-{{tip.id}}.svg'
           id='tip-{{tip.id}}'
           ng-class='{"js-hidden-tip": ifNotTip(tip.id) && isSetTip(), "js-highlighted-tip": ifIsTip(tip.id)}' />
       </section>

@@ -56,20 +56,20 @@
 		449.6,115.4 466.8,115.4 462.2,112.5 462.2,108.8 	"/>
 </g>
 <g>
-	<path fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" d="M411,438.7h33.7c3.2,0,5.6,1.1,5.3,2.4
-		l-1.9,8.7c-0.2,1.1-2.7,1.9-5.5,1.9h-29.5c-2.8,0-5.3-0.8-5.5-1.9l-1.9-8.7C405.3,439.8,407.7,438.7,411,438.7z"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="405.6,441.1 405.6,436.4 
-		408.9,435.4 447.2,435.4 450.1,436.4 450.1,441.1 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="433.3,451.7 433.3,454.7 
-		437.5,456.9 420.3,456.9 424.9,454.7 424.9,451.7 	"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" d="M568.7,453.6H535c-3.2,0-5.6-1.1-5.3-2.4
+		l1.9-8.7c0.2-1.1,2.7-1.9,5.5-1.9h29.5c2.8,0,5.3,0.8,5.5,1.9l1.9,8.7C574.3,452.5,571.9,453.6,568.7,453.6z"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="574.1,451.2 574.1,455.9 
+		570.8,456.9 532.5,456.9 529.6,455.9 529.6,451.2 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="546.4,440.6 546.4,437.7 
+		542.2,435.4 559.4,435.4 554.8,437.7 554.8,440.6 	"/>
 </g>
 <g>
-	<path fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" d="M535,438.7h33.7c3.2,0,5.6,1.1,5.3,2.4
-		l-1.9,8.7c-0.2,1.1-2.7,1.9-5.5,1.9h-29.5c-2.8,0-5.3-0.8-5.5-1.9l-1.9-8.7C529.3,439.8,531.7,438.7,535,438.7z"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="529.6,441.1 529.6,436.4 
-		532.9,435.4 571.2,435.4 574.1,436.4 574.1,441.1 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="557.3,451.7 557.3,454.7 
-		561.5,456.9 544.3,456.9 548.9,454.7 548.9,451.7 	"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" d="M444.7,453.6H411c-3.2,0-5.6-1.1-5.3-2.4
+		l1.9-8.7c0.2-1.1,2.7-1.9,5.5-1.9h29.5c2.8,0,5.3,0.8,5.5,1.9l1.9,8.7C450.3,452.5,448,453.6,444.7,453.6z"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="450.1,451.2 450.1,455.9 
+		446.8,456.9 408.5,456.9 405.6,455.9 405.6,451.2 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="422.4,440.6 422.4,437.7 
+		418.2,435.4 435.4,435.4 430.8,437.7 430.8,440.6 	"/>
 </g>
 <g>
 	<path fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" d="M729.1,344.3V378c0,3.2-1.1,5.6-2.4,5.3
@@ -78,5 +78,7 @@
 		732.4,342.2 732.4,380.5 731.4,383.4 726.7,383.3 	"/>
 	<polyline fill="none" stroke="#FFFFFF" stroke-width="1.2581" stroke-miterlimit="10" points="716.1,366.6 713.2,366.6 
 		710.9,370.8 710.9,353.5 713.2,358.2 716.1,358.2 	"/>
+</g>
+<g id="New_Symbol_1">
 </g>
 </svg>
