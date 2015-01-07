@@ -1,14 +1,14 @@
 {
   "name": "-energy-saving-tips-for-businesses",
   "dependencies": {
-    "angular": "~1.2.x",
+    "angular": "1.2.27",
     "angular-ui-router": "~0.2.11",
     "html5shiv": "~3.7.2",
     "respond": "~1.4.2",
     "json3": "~3.3.2",
-    "lodash": "~2.4.1",
-    "angular-animate": "~1.3.1",
-    "jquery": "~2.1.1"
+    "lodash": "*",
+    "angular-animate": "1.2.27",
+    "jquery": "~1"
   },
   "overrides": {
     "angular-ui-router": {
@@ -19,6 +19,6 @@
     }
   },
   "resolutions": {
-    "angular": ">= 1.0.8"
+    "angular": "1.2.27"
   }
 }

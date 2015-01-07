@@ -1,10 +1,10 @@
-app.controller('AppController', function($scope,Data) {
+angular.module('app').controller('AppController', function($scope,Data) {
   Data.fetch().then(function(data) {
     $scope.Data = data;
   });
 });
 
-app.controller('BlueprintController', function($scope,$state,$stateParams,$timeout,$interval,Data,Utils) {
+angular.module('app').controller('BlueprintController', function($scope,$state,$stateParams,$timeout,$interval,Data,Utils) {
   $scope.Utils = Utils;
   $scope.state = $state;
 
@@ -33,7 +33,7 @@ app.controller('BlueprintController', function($scope,$state,$stateParams,$timeo
   }
 });
 
-app.controller('TipController', function($scope,$state,$stateParams,Data) {
+angular.module('app').controller('TipController', function($scope,$state,$stateParams,Data) {
   $scope.tip = $stateParams.tip;
 
   Data.fetch().then(function(data) {
@@ -41,7 +41,7 @@ app.controller('TipController', function($scope,$state,$stateParams,Data) {
       return tip.id == $stateParams.tipSlug;
     })[0];
 
-    var i = $scope.tip.i = $scope.blueprint.tips.indexOf($scope.tip);
+    var i = $scope.tip.i = _.findIndex($scope.blueprint.tips, function(tip) { return tip == $scope.tip });
 
     if(i == 4)
       $scope.tip.last == true;

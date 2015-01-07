@@ -1,10 +1,4 @@
-app.factory('SomeService', function() {
-  return function name(){
-    // ...
-  };
-})
-
-app.factory('Data', function($q, $timeout, $http) {
+angular.module('app').factory('Data', function($q, $timeout, $http) {
     var data;
     var matrix = {
         fetch: function(callback) {
@@ -28,7 +22,7 @@ app.factory('Data', function($q, $timeout, $http) {
     return matrix;
 });
 
-app.factory('Utils', function() {
+angular.module('app').factory('Utils', function() {
   return {
     toSlug: function(str) {
       // str = str.replace(/[^a-zA-Z0-9\s]/g,"");

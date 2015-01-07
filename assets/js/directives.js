@@ -1,4 +1,4 @@
-app.directive('blueprintTip', function() {
+angular.module('app').directive('blueprintTip', function() {
   // Runs during compile
   return {
     // name: '',
