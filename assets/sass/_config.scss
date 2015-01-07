@@ -28,7 +28,7 @@ $link-color-visited:  $link-color;
 // ------
 // Queries
 
-$queries: small #{"screen and (min-width: 0em)"},
+$queries: small #{"screen and (min-width: 32em)"},
           medium #{"screen and (min-width: 48em)"},
           large #{"screen and (min-width: 64em)"},
           extralarge #{"screen and (min-width: 92em)"};

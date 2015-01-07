@@ -37,6 +37,7 @@
       margin: 0; padding: 0;
       // width: 20%;
       vertical-align: bottom;
+      line-height: 0;
 
       img {
         transition-duration: 0.5s;
@@ -77,15 +78,23 @@
   width: 100%;
 
   &.table {
-    width: 1140px;
+    width: 100%;
+    @include break(large) { width: 1140px; }
     .td {
-      height: 600px;
+      display: block;
+      position: relative;
+      @include break(medium) {
+        display: table-cell;
+      }
     }
   }
 
   &__header {
     text-align: center;
-    svg { width: 500px; }
+    svg {
+      width: 100%;
+      @include break(medium) { width: 500px; }
+    }
   }
 
   &__diagram {
@@ -93,27 +102,36 @@
 
     position: relative;
 
-    @include break(medium) {
-      padding: 10px;
-      width: 65%;
-    }
+    @include break(medium) { width: 60%; }
+    @include break(large) { width: 65%; }
 
-    img {
-      @extend .w100;
+    img { @extend .w100; }
+    &__overlay {
       position: absolute;
+      top: 0;
+      left: 0;
     }
   }
   &__tips {
+    width: 100%;
+
     @include break(medium) {
       padding: 10px;
-      width: 25%;
+      // width: 35%;
     }
+    // @include break(large) { width: 35%; }
   }
 }
 
 .tips {
-  vertical-align: middle;
-  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  @include break(medium) {
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
 
   &__item {
     @extend %header-type;
@@ -166,10 +184,19 @@
 }
 
 .tip-panel {
+  width: 80%;
+  margin: 0 auto 50px 10%;
+  display: block;
+
+  @include break(medium) {
+    width: auto;
+    margin: 50px auto;
+  }
+
   background: white;
   border-radius: 6px;
   position: relative;
-  min-width: 320px;
+  @include break(small) { min-width: 320px; }
 
   &__index {
     @include center-circle(1.9em);
