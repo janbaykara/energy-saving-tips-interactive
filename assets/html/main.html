@@ -1,6 +1,9 @@
 <div class="bg-beige gradient-beige">
   <div class="index__title">
-    <!--ui-sref='main'--><a><span ng-include="'public/images/logo_semi-editable.svg'"></span></a>
+    <a ui-sref='main'>
+      <img src='public/images/blueprint_title.png' />
+      <h3 id='blueprint-name' class='c-lblue main__subtitle'></h3>
+    </a>
   </div>
   <nav class="building__nav">
     <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img src='public/images/buildings/variable_height/{{blueprint.slug}}.svg'/></a>

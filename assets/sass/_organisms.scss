@@ -2,6 +2,10 @@
   Organisms
 */
 
+.main {
+  &__subtitle { margin-top: -0.4em; }
+}
+
 .index {
   &__title {
     text-align: center;
