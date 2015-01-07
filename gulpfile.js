@@ -19,19 +19,26 @@ var dirs = {
     json:    ['assets/data/*.json'],
     sass:    ['assets/sass/*.scss'],
     fonts:   ['assets/fonts/*'],
-    html:    ['assets/html/*']
+    html:    ['assets/html/*'],
+    misc:    ['assets/misc/**/*']
   },
   prod: {
     images:   'public/images',
     scripts:  'public/scripts',
     styles:   'public/styles',
-    views:    'public/views'
+    views:    'public/views',
+    misc:     'public/misc'
   }
 }
 
 gulp.task('install', function () {
   return gulp.src(dirs.dev.config)
   .pipe(plugins.install());
+});
+
+gulp.task('misc', function() {
+  gulp.src(dirs.dev.misc)
+  .pipe(gulp.dest(dirs.prod.misc));
 });
 
 // ----------------------------------------------------------------
@@ -128,10 +135,11 @@ gulp.task('watch', function() {
   gulp.watch(dirs.dev.fonts,  ['fonts']);
   gulp.watch(dirs.dev.img,    ['rasters']);
   gulp.watch(dirs.dev.svg,    ['vectors']);
+  gulp.watch(dirs.dev.misc,   ['misc']);
   //
   gulp.watch(dirs.dev.html,   ['html']);
 });
 
-gulp.task('build', ['rasters', 'vectors', 'css', 'fonts', 'js', 'libs', 'json', 'html']);
+gulp.task('build', ['rasters', 'vectors', 'css', 'fonts', 'js', 'libs', 'json', 'html', 'misc']);
 gulp.task('init', ['install', 'build']);
 gulp.task('default', ['build', 'watch']);

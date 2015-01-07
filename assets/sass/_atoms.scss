@@ -5,6 +5,7 @@
 a {
   color: $link-color;
   text-decoration: none;
+  outline: none !important; //ie8
 
   &:visited {
     color: $link-color-visited; }
