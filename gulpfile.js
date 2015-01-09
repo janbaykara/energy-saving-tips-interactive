@@ -111,14 +111,13 @@ gulp.task('misc', function() {
 
     gulp.task('rasters', function() {
       gulp.src(dirs.dev.img)
-      // .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+      .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
       .pipe(gulp.dest(dirs.prod.images));
     });
 
     gulp.task('vectors', function() {
       gulp.src(dirs.dev.svg)
       // .pipe(plugins.svgmin())
-      // .pipe(plugins.replace(/_[0-9]+_/g, '')) // Illustrator SVGs; strip appended strings from id names
       .pipe(gulp.dest(dirs.prod.images));
     });
 
