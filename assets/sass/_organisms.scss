@@ -8,6 +8,7 @@
     max-width: 840px;
   }
   &__subtitle {
+    margin-bottom: 0.3em;
                               font-size: 2em;
                               margin-top: -0.3em;
     @include break(small)  { font-size: 2.5em;
@@ -20,7 +21,7 @@
 .index {
   &__title {
     text-align: center;
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
     overflow: hidden;
     svg { width: 100%; }
     @include break(medium) { svg { width: 60%; } }
