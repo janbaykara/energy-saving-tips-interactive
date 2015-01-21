@@ -32,3 +32,35 @@ angular.module('app').factory('Utils', function() {
     }
   }
 });
+
+angular.module('app').factory('TipImage', function() {
+  var noImages = [];
+  var tip = "x";
+  return {
+    checkImage: function(plan,tip) {
+      var xxx = true;
+      // console.log(noImages,plan,tip)
+      _.each(noImages, function(img) {
+        if(img == plan+"-"+tip) {
+          console.log("found no IMAGE");
+          xxx = false;
+        }
+      })
+      if(xxx) console.log("hassss IMAGE");
+      return xxx;
+    },
+    noImage: function(plan,tip) {
+      // console.log("DOES NOT HAVE IMAGE");
+      noImages.push([plan,tip].join("-"));
+    },
+    setTip: function(x) {
+      // console.log(x)
+      tip = x;
+    },
+    getTip: function(x) {
+      // console.log(x)
+      return tip;
+    }
+  }
+});
+

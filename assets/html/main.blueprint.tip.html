@@ -14,7 +14,8 @@
     <div class='tip-panel__section-content'>{{tip.advice}}</div>
   </section>
   <nav class='tip-panel__nav'>
-    <a ng-if='tip.i !== 4' ui-sref='main.blueprint.tip({ "tipSlug": tip.next.id })'>{{tip.next.title}} <i class='fa fa-arrow-circle-down'></i></a>
-    <a ng-if='tip.i == 4' ui-sref='main.blueprint'><i class='fa fa-arrow-circle-up'></i> Back</a>
+    <!-- <a ng-if='tip.i == 4' ui-sref='main.blueprint'><i class='fa fa-arrow-circle-left'></i> Back</a> -->
+    <a ng-if='tip.i !== 0' ui-sref='main.blueprint.tip({ "tipSlug": tip.prev.id })'>Previous <i class='fa fa-arrow-circle-up'></i></a>
+    <a ng-if='tip.i !== 4' ui-sref='main.blueprint.tip({ "tipSlug": tip.next.id })'><i class='fa fa-arrow-circle-down'></i> Next</a>
   </nav>
 </article>

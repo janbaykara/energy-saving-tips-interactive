@@ -4,9 +4,10 @@ angular.module('app').controller('AppController', function($scope,Data) {
   });
 });
 
-angular.module('app').controller('BlueprintController', function($scope,$state,$stateParams,$timeout,$interval,Data,Utils) {
+angular.module('app').controller('BlueprintController', function($scope,$state,$stateParams,$timeout,$interval,Data,Utils,TipImage,ngError,CurrentTip) {
   $scope.Utils = Utils;
   $scope.state = $state;
+  $scope.TipImage = TipImage;
 
   Data.fetch().then(function(data) {
     $scope.Data = data;
@@ -33,13 +34,14 @@ angular.module('app').controller('BlueprintController', function($scope,$state,$
   }
 });
 
-angular.module('app').controller('TipController', function($scope,$state,$stateParams,Data) {
+angular.module('app').controller('TipController', function($scope,$state,$stateParams,Data,TipImage) {
   $scope.tip = $stateParams.tip;
-
+  $scope.TipImage = TipImage;
   Data.fetch().then(function(data) {
     $scope.tip = _.filter($scope.blueprint.tips, function(tip) {
       return tip.id == $stateParams.tipSlug;
     })[0];
+    TipImage.setTip($stateParams.tipSlug);
 
     var i = $scope.tip.i = _.findIndex($scope.blueprint.tips, function(tip) { return tip == $scope.tip });
 

@@ -13,6 +13,12 @@ html, body {
   box-sizing: border-box;
 }
 
+img {
+  color: transparent;
+  -moz-force-broken-image-icon: 0;
+  &:after { content:" (image)"; }
+}
+
 ::selection {
   color: $background-color;
   background: $brand-color;

@@ -8,12 +8,12 @@ a {
   outline: none !important; //ie8
 
   &:visited {
-    color: $link-color-visited; }
+    color: $link-color-visited !important; }
 
   &:active {
-    color: $link-color-active;
+    color: $link-color-active !important;
     border-bottom-color: $link-color; }
 
   &:hover {
-    color: $link-color-hover; }
+    color: $link-color-hover !important; }
 }
