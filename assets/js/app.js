@@ -15,9 +15,10 @@ angular.module('ngError', ['ng']).directive('ngError', ['$parse', function($pars
     };
 }]);
 
-angular.module('app', ['ui.router','ngAnimate','ngError'])
+angular.module('app', ['ui.router','ngAnimate','ngError','ngRetina'])
 
-.config(function($stateProvider,$urlRouterProvider) {
+.config(function($stateProvider,$urlRouterProvider,ngRetinaProvider) {
+    ngRetinaProvider.setInfix('_2x');
 
   $stateProvider
     .state('main', {

@@ -8,7 +8,8 @@
     "json3": "~3.3.2",
     "lodash": "*",
     "angular-animate": "1.2.27",
-    "jquery": "~1"
+    "jquery": "~1",
+    "angular-retina": "~0.3.1"
   },
   "overrides": {
     "angular-ui-router": {
@@ -16,6 +17,9 @@
     },
     "lodash": {
       "main": "dist/lodash.compat.js"
+    },
+    "angular-retina": {
+      "main": "lib/angular-retina.js"
     }
   },
   "resolutions": {

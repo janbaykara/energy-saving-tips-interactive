@@ -2,16 +2,16 @@
   <div class="index__title">
     <a ui-sref='main'>
       <a class='block' href='http://www.switchmybusiness.com/'>
-        <img class='main__logo' src='public/images/smb-logo-01.png' />
+        <img class='main__logo' ng-src='public/images/smb-logo-01.png' />
       </a>
       <h5 class='c-blue main__minor'>presents</h5>
-      <img class='main__title' src='public/images/blueprint_title.png' />
+      <img class='main__title' ng-src='public/images/blueprint_title.png' />
       <h4 id='blueprint-name' class='c-lblue main__subtitle'></h4>
       <div class="addthis_sharing_toolbox"></div>
     </a>
   </div>
   <nav class="building__nav">
-    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img src='public/images/blueprint_building-variable-{{blueprint.slug}}.png'/></a>
+    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img ng-src='public/images/blueprint_building-variable-{{blueprint.slug}}.png'/></a>
   </nav>
   <div style='background: #e3d8c1; height: 18px;'></div>
 </div>
