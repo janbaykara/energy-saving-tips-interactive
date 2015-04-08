@@ -19,7 +19,7 @@
       "main": "dist/lodash.compat.js"
     },
     "angular-retina": {
-      "main": "lib/angular-retina.js"
+      "main": "dist/angular-retina.js"
     }
   },
   "resolutions": {
