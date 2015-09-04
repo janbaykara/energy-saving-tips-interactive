@@ -1,0 +1,51 @@
+[ui-view='tips'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: slideInFromTop 0.5s #{$swift};
+
+  &.ng-leave {
+    animation: slideOutToBottom 0.5s #{$swift};
+  }
+}
+
+.app__content[ui-view] {
+  position: absolute;
+  animation: slideInFromRight 0.5s #{$swift};
+
+  &.ng-leave {
+    animation: slideOutToLeft 0.5s #{$swift};
+  }
+}
+
+@keyframes slideInFromTop {
+  from { transform: translate(0,100%); opacity: 0; }
+  to { transform: translate(0%); opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { opacity: 1; transform: translate(-100%    ); }
+  to   { opacity: 1; transform: translate(0%       ); }
+}
+
+@keyframes slideOutToRight {
+  from { opacity: 1; transform: translate(0%       ); }
+  to   { opacity: 1; transform: translate(100%     ); }
+}
+
+//
+
+@keyframes slideOutToBottom {
+  from { transform: translate(0%); opacity: 1; }
+  to { transform: translate(0,-100%); opacity: 0; }
+}
+
+@keyframes slideInFromRight {
+  from { opacity: 1; transform: translate(100%    ); }
+  to   { opacity: 1; transform: translate(0%       ); }
+}
+
+@keyframes slideOutToLeft {
+  from { opacity: 1; transform: translate(0%       ); }
+  to   { opacity: 1; transform: translate(-100%     ); }
+}

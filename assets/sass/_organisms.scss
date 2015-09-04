@@ -2,16 +2,263 @@
   Organisms
 */
 
-.app__header {
-  margin-bottom: 1em;
-  border-bottom: 1px solid $silver;
-
-  background: $silver;
-  padding: 5em 0 1em;
+.main {
+  &__title {
+    width: 100%;
+    max-width: 840px;
+  }
+  &__subtitle {
+    margin-bottom: 0.3em;
+                              font-size: 2em;
+                              margin-top: -0.3em;
+    @include break(small)  { font-size: 2.5em;
+                              margin-top: -0.3em; }
+    @include break(large)  { font-size: 3.5em;
+                              margin-top: -0.3em; }
+  }
 }
 
-.app__footer {
-  margin-top: 1em;
-  padding: 1em 0;
-  border-top: 1px solid #EEE;
+.index {
+  &__title {
+    text-align: center;
+    padding: 2em 2em 1em 2em;
+    overflow: hidden;
+    svg { width: 100%; }
+    @include break(medium) { svg { width: 60%; } }
+    @include break(extralarge) { svg { width: 50%; } }
+  }
+
+  &__summary {
+    padding: 2em;
+    overflow: hidden;
+    font-size: 0.8em;
+    max-width: 768px;
+    margin: 0 auto;
+
+    h3 + h3 { margin-top: 0.5em; }
+  }
+}
+.building {
+  &__nav {
+    font-size: 0em;
+    line-height: 0;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    &__item {
+      font-size: initial;
+      line-height: initial;
+      display: inline-block;
+      margin: 0; padding: 0;
+      // width: 20%;
+      vertical-align: bottom;
+      line-height: 0;
+      width: 20%;
+
+      transition: all 0.5s #{$swift} !important;
+
+      $kern: -1.4%;
+      margin-left: $kern;
+      margin-right: $kern;
+
+      img {
+        transition-duration: 0.5s;
+        width: 99%;
+        // display: block;
+        // max-height: 400px;
+      }
+    }
+  }
+
+  &-hairdresser,
+  &-clinic,
+  &-retail {
+    @extend %overlap;
+  }
+}
+
+%overlap {
+  z-index: 100;
+  position: relative;
+}
+
+.blueprint {
+  margin: 0 auto;
+  width: 100%;
+
+  &.table {
+    width: 100%;
+    @include break(large) { width: 1140px; }
+    .td {
+      display: block;
+      position: relative;
+      @include break(medium) {
+        display: table-cell;
+      }
+    }
+  }
+
+  &__header {
+    text-align: center;
+    svg {
+      width: 100%;
+      @include break(medium) { width: 500px; }
+    }
+  }
+
+  &__diagram {
+    @extend .box;
+
+    position: relative;
+
+    @include break(medium) { width: 60%; }
+    @include break(large) { width: 65%; }
+
+    img { @extend .w100; }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__tips {
+    width: 100%;
+
+    @include break(medium) {
+      padding: 10px;
+      // width: 35%;
+    }
+    // @include break(large) { width: 35%; }
+  }
+}
+
+.tips {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  @include break(medium) {
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__item {
+    @extend %header-type;
+
+    list-style: none;
+    width: 100%;
+    margin-top: 0.5em;
+
+    & + & {
+                               margin-top: 0.5em;
+      @include break(medium) { margin-top: 1em; }
+    }
+
+    &__counter {
+      &, & * { color: $text-color; }
+      @include center-circle(75px,2.5em);
+
+      > div {
+        background: lighten($brand-dark,20%);
+        border: 2px solid $brand-beige;
+      }
+      &.complete > div {
+        color: $brand-dark;
+        background: $good;
+      }
+      &.incomplete > div {
+        color: $brand-dark;
+        background: $bad;
+        border: 2px solid $brand-beige;
+      }
+    }
+
+    &__name{
+      vertical-align: middle;
+      display: inline-block;
+      width: 65%;
+      margin-left: 0.2em;
+      font-size: 1.9em;
+      line-height: 0.9em;
+
+      color: $brand-lblue;
+    }
+  }
+}
+
+%panel-segment {
+  padding: 0.5em 30px;
+}
+%generous-segment {
+  padding: 0.5em;
+}
+
+.tip-panel {
+  width: 80%;
+  margin: 0 auto 50px 10%;
+  display: block;
+
+  @include break(medium) {
+    width: auto;
+    margin: 50px auto;
+  }
+
+  background: white;
+  border-radius: 6px;
+  position: relative;
+  @include break(small) { min-width: 320px; }
+
+  &__index {
+    @include center-circle(1.9em);
+    @extend %header-type;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    > div {
+      background: white;
+      color: darken($good,5%);
+      border: 3px solid $good;
+    }
+  }
+
+  &__name {
+    @extend %generous-segment;
+
+    font-size: 2.5em;
+    color: $brand-dark;
+    background: $good;
+    text-align: middle;
+    border-radius: 6px 6px 0px 0px;
+    border: 2px solid lighten($good,5%);
+    border-bottom: none;
+    text-align: center;
+    line-height: 0.75em;
+  }
+  &__section-heading {
+    @extend %panel-segment;
+    background: $brand-blue;
+    color: white;
+    font-size: 1.5em;
+  }
+  &__section-content {
+    @extend %panel-segment;
+    color: #7b93ab;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    b { color: #4d8282; }
+  }
+  &__nav {
+    @extend %generous-segment;
+    @extend %header-type;
+
+    color: #c46857;
+    font-size: 1.5em;
+    text-align: center;
+    border-top: 1px solid #DADADA;
+    margin: 1em;
+    margin-top: 4px;
+  }
 }

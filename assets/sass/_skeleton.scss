@@ -2,15 +2,58 @@
   Skeleton
 */
 
+html, body {
+  background-color: $background-color;
+  color: $text-color;
+  height: 100%;
+}
+
 * {
-  transition: all 0.25s cubic-bezier(.54,.27,.27,.91);
+  transition: all 0.25s #{$swift};
   box-sizing: border-box;
 }
 
-::selection { color: $brand-color;  background: $background-color; }
+img {
+  color: transparent;
+  -moz-force-broken-image-icon: 0;
+  &:after { content:" (image)"; }
+}
+
+::selection {
+  color: $background-color;
+  background: $brand-color;
+}
 
 .content {
   max-width: 640px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+.app {
+  &__header {
+    // @include m-v(0em,1em);
+    // @include p-v(1em,0em);
+  }
+
+  &__content {
+    width: 100%;
+    @include m-h(auto,auto);
+    @include p-h(10px,10px);
+    @include break(medium) { @include p-h(20px,20px); }
+    @include break(large) { @include p-h(40px,40px); }
+    @include break(extralarge) { @include p-h(40px,40px); }
+  }
+
+  &__footer {
+    @include m-v(1em,0em);
+    @include p-v(0em,1em);
+    font-size: 0.6em; line-height: 1.4em;
+    &, & * { color: lighten($brand-dark,15%) }
+  }
+}
+
+[ui-view='content'] {
+  padding-left: 0;
+  padding-right: 0;
 }

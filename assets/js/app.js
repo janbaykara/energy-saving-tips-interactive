@@ -1,24 +1,53 @@
-var app = angular.module('app', ['ui.router']);
+angular.module('ngError', ['ng']).directive('ngError', ['$parse', function($parse){
+    return {
+        restrict: 'A',
+        compile: function($element, attr) {
+            var fn = $parse(attr['ngError']);
 
-/* AngularJS calling order
-1. app.config()
-2. app.run()
-3. directive's compile functions (if they are found in the dom)
-4. app.controller()
-5. directive's link functions (again if found)
-*/
+            return function(scope, element, attr) {
+                element.on('error', function(event) {
+                    scope.$apply(function() {
+                        fn(scope, {$event:event});
+                    });
+                });
+            };
+        }
+    };
+}]);
 
-app.config(function() {
+angular.module('app', ['ui.router','ngAnimate','ngError','ngRetina'])
 
-  // $stateProvider
-  //   .state('index', {
-  //     url: '/',
-  //     templateUrl: 'partials/index.html'
-  //   })
+.config(function($stateProvider,$urlRouterProvider,ngRetinaProvider) {
+    ngRetinaProvider.setInfix('_2x');
 
-    // $urlRouterProvider.otherwise('/');
-})
-
-app.run(function () {
-   // $state.transitionTo('index');
+  $stateProvider
+    .state('main', {
+      url: '/',
+      views: {
+        'app': {
+          templateUrl: 'public/views/main.html'
+        }
+      }
+    })
+    .state('main.blueprint', {
+      url: ':blueprintSlug',
+      controller: 'BlueprintController',
+      views: {
+        'content': {
+          templateUrl: 'public/views/main.blueprint.html',
+          controller: 'BlueprintController',
+        }
+      }
+    })
+    .state('main.blueprint.tip', {
+      url: '/:tipSlug',
+      controller: 'TipController',
+      views: {
+        'tips': {
+          templateUrl: 'public/views/main.blueprint.tip.html',
+          controller: 'TipController'
+        }
+      }
+    })
+  $urlRouterProvider.otherwise('/');
 })

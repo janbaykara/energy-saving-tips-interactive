@@ -1,0 +1,23 @@
+<div class="bg-beige gradient-beige">
+  <div class="index__title">
+    <a ui-sref='main'>
+      <a class='block' href='http://www.switchmybusiness.com/'>
+        <img class='main__logo' ng-src='public/images/smb-logo-01.png' />
+      </a>
+      <h5 class='c-blue main__minor'>presents</h5>
+      <img class='main__title' ng-src='public/images/blueprint_title.png' />
+      <h4 id='blueprint-name' class='c-lblue main__subtitle'></h4>
+      <div class="addthis_sharing_toolbox"></div>
+    </a>
+  </div>
+  <nav class="building__nav">
+    <a ng-repeat='blueprint in Data.blueprints' class="building__nav__item building-{{blueprint.slug}}" ui-sref="main.blueprint({'blueprintSlug': blueprint.slug })"><img ng-src='public/images/blueprint_building-variable-{{blueprint.slug}}.png'/></a>
+  </nav>
+  <div style='background: #e3d8c1; height: 18px;'></div>
+</div>
+<main class="app__content v-p-gap" ui-view='content'>
+  <div class="index__summary aln-h-m">
+    <h3 class="c-lblue f4">Hints and tips for businesses to save money on your energy bills.</h3>
+    <h3 class="white f4">Go ahead and click a building to find out more.</h3>
+  </div>
+</main>

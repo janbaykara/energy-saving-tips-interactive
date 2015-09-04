@@ -1,0 +1,18 @@
+<header class="blueprint__header v-p-gap">
+  <h1 class="blueprint__header--generic">Energy Saving Tips</h1>
+  <h2 class="blueprint__header--specific">In The Office</h2>
+</header>
+<div class="blueprint">
+  <figure class="blueprint__diagram">
+    <img class="w100" src='public/images/blueprint-proto.png' />
+  </figure>
+  <section class="blueprint__tips" ui-view='tips'>
+    <ul class="tips box">
+      <li ng-repeat='tip in blueprint.tips track by $index' class="tips__item" ng-class='{"complete": tip.status === 2, "incomplete": tip.status === 0, "active": tip.status === 1}'>
+        <div class="tips__item__counter"><div><i>{{$index+1}}</i></div></div>
+        <a ui-sref='blueprint.tip({ tip: tip })' class="tips__item__name">{{tip.title}}</a>
+        <div class="clearfix"></div>
+      </li>
+    </ol>
+  </section>
+</div>

@@ -10,3 +10,31 @@
   font-family: monospace;
   font-size: 11px;
 }
+
+.js-activeBuilding {
+  width: 27.5%;
+  opacity: 1 !important;
+  // height: 400px;
+  img { z-index: 999; }
+}
+.js-inactiveBuilding {
+  width: 15%;
+  // height: 200px;
+}
+.current {
+  width: 25%;
+  margin: 20px 5% 0px;
+}
+.notCurrent {
+  width: 12.5%;
+}
+.js-highlighted-tip {
+  opacity: 1;
+}
+.js-hidden-tip {
+  opacity: 0.2;
+}
+
+.js-displaying-tip {
+  opacity: 0.35;
+}

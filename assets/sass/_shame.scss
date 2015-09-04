@@ -3,3 +3,60 @@
 
   Where bad CSS goes to repent.
 */
+
+div.index__summary h3 {
+  font-size: 2.5em !important;
+  @include break(small) { font-size: 2.75em !important; }
+  @include break(medium) { font-size: 3.25em !important; }
+}
+
+.js-inactiveBuilding {
+  opacity: 0.5;
+}
+
+//
+
+.building__nav__item {
+  opacity: 0.75;
+}
+
+.building__nav__item:hover {
+  opacity: 0.95;
+  bottom: 0px;
+}
+
+/* Float Shadow */
+.building__nav__item {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  &:hover:before {
+    opacity: 1;
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+}

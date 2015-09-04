@@ -1,0 +1,21 @@
+<article class='tip-panel'>
+  <div class="tip-panel__index center-circle">
+    <div><i>#{{tip.i+1}}</i></div>
+  </div>
+  <header class='tip-panel__name'>
+    <h3 class="inherit">{{tip.title}}</h3>
+  </header>
+  <section ng-if="tip.info">
+    <h4 class='tip-panel__section-heading'>You should know</h4>
+    <div class='tip-panel__section-content'>{{tip.info}}</div>
+  </section>
+  <section ng-if="tip.advice">
+    <h4 class='tip-panel__section-heading'>What to do</h4>
+    <div class='tip-panel__section-content'>{{tip.advice}}</div>
+  </section>
+  <nav class='tip-panel__nav'>
+    <!-- <a ng-if='tip.i == 4' ui-sref='main.blueprint'><i class='fa fa-arrow-circle-left'></i> Back</a> -->
+    <a ng-if='tip.i !== 0' ui-sref='main.blueprint.tip({ "tipSlug": tip.prev.id })'>Previous <i class='fa fa-arrow-circle-up'></i></a>
+    <a ng-if='tip.i !== 4' ui-sref='main.blueprint.tip({ "tipSlug": tip.next.id })'><i class='fa fa-arrow-circle-down'></i> Next</a>
+  </nav>
+</article>

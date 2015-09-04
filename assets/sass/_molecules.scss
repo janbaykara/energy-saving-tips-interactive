@@ -1,3 +1,23 @@
 /* -------
   Molecules
 */
+
+@mixin center-circle($size: 1.5em,$font: 1.5em) {
+  display: inline-block;
+  vertical-align: middle;
+
+  div {
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: $size;
+    height: $size;
+    border-radius: 100px;
+    font-size: $font;
+
+    i {
+      display: table-cell;
+      font-style: normal;
+      vertical-align: middle; }
+  }
+}
